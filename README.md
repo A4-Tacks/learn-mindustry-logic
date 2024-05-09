@@ -5,6 +5,10 @@
 
 由于其可以和 '显示屏' '信息板' '按钮' '炮台' 等交互, 所以可以制作一些交互式工具
 
+本书基于的游戏版本约为 146.0
+
+欢迎对本书提出建议
+
 [目录](./pages/README.md)
 
 [Mindustry]: https://github.com/Anuken/Mindustry
