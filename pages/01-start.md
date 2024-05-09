@@ -47,3 +47,4 @@ printflush message1
 
 ---
 [目录](./README.md)
+[下一章](./02-learn-literal.md)
