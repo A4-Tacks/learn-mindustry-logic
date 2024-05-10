@@ -54,3 +54,4 @@ printflush message1
 ---
 [上一章](./04-change-variable.md)
 [目录](./README.md)
+[下一章](./06-env-vars.md)

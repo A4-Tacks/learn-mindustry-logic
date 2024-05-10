@@ -8,3 +8,5 @@ Index
 - [03-什么是变量](./03-what-is-variable.md)
 - [04-修改变量](./04-change-variable.md)
 - [05-跳转](./05-jump.md)
+- [06-环境变量](./06-env-vars.md)
+- [07-打印与绘制](./07-print-and-draw.md)
