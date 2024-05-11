@@ -36,3 +36,4 @@ jump loop lessThan n @links
 ---
 [上一章](./07-print-and-draw.md)
 [目录](./README.md)
+[下一章](./09-sensor.md)

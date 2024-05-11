@@ -11,5 +11,7 @@ Index
 - [06-环境变量](./06-env-vars.md)
 - [07-打印与绘制](./07-print-and-draw.md)
 - [08-获取链接](./08-getlink.md)
+- [09-传感器](./09-sensor.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)
+* [附录02-传感器选项](./appendix-02-sensor-options.md)
