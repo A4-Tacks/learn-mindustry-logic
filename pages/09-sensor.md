@@ -39,3 +39,4 @@ printflush message1 # 仅在遍历完成后一起输出
 ---
 [上一章](./08-getlink.md)
 [目录](./README.md)
+[下一章](./10-control.md)
