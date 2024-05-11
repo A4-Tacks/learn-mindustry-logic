@@ -34,5 +34,5 @@ jump loop lessThan n @links
 
 
 ---
-[上一章](./06-env-vars.md)
+[上一章](./07-print-and-draw.md)
 [目录](./README.md)
