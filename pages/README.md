@@ -10,5 +10,6 @@ Index
 - [05-跳转](./05-jump.md)
 - [06-环境变量](./06-env-vars.md)
 - [07-打印与绘制](./07-print-and-draw.md)
+- [08-获取链接](./08-getlink.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)

@@ -57,3 +57,4 @@ drawflush display1
 ---
 [上一章](./06-env-vars.md)
 [目录](./README.md)
+[下一章](./08-getlink.md)
