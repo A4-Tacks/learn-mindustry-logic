@@ -30,6 +30,45 @@ ucontrol move x y 0 0 0
 ```
 
 
+简单的对于一些控制操作的注意事项
+---
+对于within来判定是否接近某点时, 记得如果你不需要控制状态,
+就不要使用这个, 因为是控制语句. 请手动应用公式计算距离
+$\mid \overrightarrow {(x_u - x_t, y_u - y_t)} \mid$
+
+以下是一段代码
+
+```
+sensor ux @unit @x
+sensor uy @unit @y
+op sub dx ux tx
+op sub dy uy ty
+op len len dx dy
+op lessThan within len 10
+```
+
+---
+对于build建造的建筑需要额外信息, 如带桥连接点或者逻辑内容等, 可以借助config位,
+它输入一个building类型值, 可以把另一个建筑的config复制过来
+
+以下是一段代码, x坐标为奇数时, 会将自身复制一份在右边.
+事先链接好四周建筑的位置, 这样新逻辑一被放下就会链接从而终止建筑条件
+
+```
+jump 0 notEqual @links 0
+op mod c @thisx 2
+jump 0 equal c 0
+op add tx @thisx 1
+sensor type @this @type
+sensor r @this @rotation
+ubind @poly
+ucontrol build tx @thisy type r @this
+```
+
+注: `@this`变量表示逻辑自身的building环境变量,
+而`@thisx`是逻辑自身位置的x坐标环境变量
+
+
 ---
 [上一章](./16-unit-bind.md)
 [目录](./README.md)
