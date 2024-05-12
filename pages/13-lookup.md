@@ -41,3 +41,4 @@ jump loop lessThan i @itemCount
 ---
 [上一章](./12-other-control-flow.md)
 [目录](./README.md)
+[下一章](./14-pack-color.md)
