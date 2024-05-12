@@ -14,6 +14,7 @@ Index
 - [09-传感器](./09-sensor.md)
 - [10-控制](./10-control.md)
 - [11-内存的读和写](./11-read-and-write-of-memory.md)
+- [12-其它控制流](./12-other-control-flow.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)
 * [附录02-传感器选项](./appendix-02-sensor-options.md)
