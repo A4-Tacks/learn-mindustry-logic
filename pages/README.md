@@ -17,6 +17,7 @@ Index
 - [12-其它控制流](./12-other-control-flow.md)
 - [13-根据编号获取类型](./13-lookup.md)
 - [14-打包颜色](./14-pack-color.md)
+- [15-雷达](./15-radar.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)
 * [附录02-传感器选项](./appendix-02-sensor-options.md)
