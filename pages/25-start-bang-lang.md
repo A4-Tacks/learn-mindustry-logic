@@ -25,7 +25,7 @@ mindustry_logic_bang_lang cl <<< 'print "Hello, World!";'
 print "Hello, World!"
 ```
 
-虽然目前这个例子看着和输入的没什么区别,
+虽然目前这个例子看着和输入的没什么区别, bang做的尽量贴合逻辑的语法风格,
 不过随着需要编写的复杂起来, 它可以成为强大有力的工具.
 
 要想阅读之后的章节, 请先确保你能够使用这个编译器编译代码, 不然将基本无法进行
@@ -43,3 +43,4 @@ print "Hello, World!"
 ---
 [上一章](./24-world-processor.md)
 [目录](./README.md)
+[下一章](./26-bang-var.md)
