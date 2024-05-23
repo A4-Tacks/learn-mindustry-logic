@@ -27,6 +27,7 @@ Index
 - [22-复杂条件](./22-complex-cond.md)
 - [23-进阶控制流-函数](./23-advanced-control-flow-function.md)
 - [24-世界处理器](./24-world-processor.md)
+- [25-开始学习bang语言](./25-start-bang-lang.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)
 * [附录02-传感器选项](./appendix-02-sensor-options.md)
