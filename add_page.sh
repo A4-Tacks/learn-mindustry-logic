@@ -77,6 +77,7 @@ echo "${prev@A}" >&2
 if ! { read -N1 -rp '是否确认? [y/Y]' && [[ "${REPLY}" = @(|[yY$'\n']) ]]; } then
     exit 1
 fi
+[ "$REPLY" = $'\n' ] || echo
 
 sed -i "\$a[下一章](./$build_file)" "${prev:?}"
 sed -i "${line:?}a- [${id:?}-${page_name:?}](./${build_file:?})" "${index_file}"
