@@ -46,3 +46,4 @@ printflush message1
 ---
 [上一章](./26-bang-var.md)
 [目录](./README.md)
+[下一章](./28-bang-basic-line.md)
