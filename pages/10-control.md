@@ -18,7 +18,7 @@
 从而避免直接爆炸
 
 ```
-getlink block i # i default value by null, to integer by zero
+getlink block i # i的默认值是null, 自动转换到数字则为0
 sensor liquid block @cryofluid # 通过冷冻液的content获取反应堆冷冻液量
 op greaterThan enabled liquid 20 # 判定开启标志为冷冻液量大于20
 control enabled block enabled 0 0 0
