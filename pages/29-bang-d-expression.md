@@ -41,6 +41,8 @@ print __0
 可以看到, 生成了一个名为`__0`的变量, 并且我们在上述代码中使用了`$`,
 它是一个特殊的值, 称作返回句柄替换符, 它表示最内层的DExp的返回句柄.
 
+有一个小语法糖[^2], 在编写如`print (var: $ = a+b;);`时, 可以写成`print (?var: a+b);`
+
 
 Op-Expression 实现原理
 ---
@@ -78,3 +80,4 @@ op x a + (op $ log b;);
 ---
 [上一章](./28-bang-basic-line.md)
 [目录](./README.md)
+[下一章](./30-bang-const-and-take.md)
