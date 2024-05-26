@@ -9,6 +9,9 @@
 
 欢迎对本书提出建议
 
+**Author**: [A4-Tacks](https://github.com/A4-Tacks)\
+**repo**: <https://github.com/A4-Tacks/learn-mindustry-logic>
+
 [目录](./pages/README.md)
 
 [Mindustry]: https://github.com/Anuken/Mindustry
