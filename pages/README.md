@@ -34,6 +34,7 @@ Index
 - [29-bang-D-表达式](./29-bang-d-expression.md)
 - [30-bang-const和take](./30-bang-const-and-take.md)
 - [31-bang-const后的元信息](./31-bang-consted-metainfo.md)
+- [32-bang-const到值绑定](./32-bang-const-to-value-bind.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)
 * [附录02-传感器选项](./appendix-02-sensor-options.md)

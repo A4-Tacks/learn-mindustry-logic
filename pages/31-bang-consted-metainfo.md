@@ -40,3 +40,4 @@ const F = (
 ---
 [上一章](./30-bang-const-and-take.md)
 [目录](./README.md)
+[下一章](./32-bang-const-to-value-bind.md)
