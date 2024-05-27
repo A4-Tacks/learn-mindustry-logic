@@ -33,6 +33,7 @@ Index
 - [28-bang-基本行](./28-bang-basic-line.md)
 - [29-bang-D-表达式](./29-bang-d-expression.md)
 - [30-bang-const和take](./30-bang-const-and-take.md)
+- [31-bang-const后的元信息](./31-bang-consted-metainfo.md)
 
 * [附录01-op方法](./appendix-01-op-method.md)
 * [附录02-传感器选项](./appendix-02-sensor-options.md)

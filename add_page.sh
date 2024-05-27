@@ -75,6 +75,7 @@ echo "${line@A}" >&2
 echo "${prev@A}" >&2
 
 if ! { read -N1 -rp '是否确认? [y/Y]' && [[ "${REPLY}" = @(|[yY$'\n']) ]]; } then
+    echo
     exit 1
 fi
 [ "$REPLY" = $'\n' ] || echo

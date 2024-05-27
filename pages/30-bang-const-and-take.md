@@ -20,13 +20,14 @@ Variable (变量), 也简称量, 是逻辑的所有字面量(包括逻辑的变�
 
 - Variable (变量),
 
-  它的take会在常量表中尝试找到一个常量, 找到的话进行展开, 没找到的话返回自身.
+  它的take会在常量表中尝试找到一个常量, 找到的话进行take, 没找到的话返回自身.
+  如果找到的那个常量值依旧是一个Variable, 那么它将直接使用那个值而不是继续take继续找
 
   它的const-follow会在常量表中尝试找到一个常量, 找到的话把值替换成找到的常量,
   没找到的话还是自身
 
 - DExp (D表达式), 它的take就如前文所讲,
-  不过它的返回句柄声明处展开时会进行一个const-follow,
+  不过它的返回句柄声明处take时会进行一个const-follow,
   并限定其结果只能是一个Variable, 如果不是则会报错.
 
 - Value-Bind (值绑定), 它的take会尝试将左侧的值take,
@@ -56,7 +57,7 @@ Variable (变量), 也简称量, 是逻辑的所有字面量(包括逻辑的变�
   - 跟着一个`..`符号, 这个会对左侧值进行const-follow,
     然后返回其const信息中的绑定者, 这部分还没学不用管
 
-- Result-Handle (返回句柄替换符), 它的take会得到最内层正在展开的DExp的返回句柄.
+- Result-Handle (返回句柄替换符), 它的take会得到最内层正在take的DExp的返回句柄.
 
 
 ---
@@ -100,7 +101,7 @@ print A
 
 ```
 take Result = (res: $ = 3;);
-print 1; # 借这个语句分隔说明上面那个DExp的展开的确是发生在使用Result前
+print 1; # 借这个语句分隔说明上面那个DExp的take的确是发生在使用Result前
 print Result;
 ```
 
@@ -125,3 +126,4 @@ print res
 ---
 [上一章](./29-bang-d-expression.md)
 [目录](./README.md)
+[下一章](./31-bang-consted-metainfo.md)
