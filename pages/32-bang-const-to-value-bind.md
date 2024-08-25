@@ -39,3 +39,4 @@ print 3
 ---
 [上一章](./31-bang-consted-metainfo.md)
 [目录](./README.md)
+[下一章](./33-bang-quick-dexp-take.md)
