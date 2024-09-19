@@ -104,7 +104,7 @@ print x
 
 
 [^1]: 通过一些方法, 在某刻使变量的值改变为另一个值
-[^2]: ./24-world-processor.md
+[^2]: [24-世界处理器](./24-world-processor.md)
 
 ---
 [上一章](./02-learn-literal.md)
