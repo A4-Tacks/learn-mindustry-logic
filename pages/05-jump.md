@@ -47,6 +47,39 @@ jump 1 lessThan i 5
 printflush message1
 ```
 
+
+关于逻辑实现的坑
+-------------------------------------------------------------------------------
+逻辑块解析跳转标记时, 不会将最后一行的标记链接到最头部, 例如如下代码
+
+```
+set var true
+jump label always 0 0
+    print "skipped"
+label:
+```
+
+导入逻辑块时, jump 的跳转目标为 -1, 也就是未连接任何目标, 就像这行什么都没做
+
+要是想要如同预期的那样跳转到最后一行然后回到首行,
+我们需要将标签挪至首行或者使其不在尾部, 例如如下两种做法
+
+```
+label:
+set var true
+jump label always 0 0
+    print "skipped"
+```
+
+```
+set var true
+jump label always 0 0
+    print "skipped"
+label:
+end # 这样会多执行一行 end, 或许会变慢?
+```
+
+
 [^1]: 标记大致是一个普通的变量, 末尾冒号, 并直接接着行结束, 就可以成为一个标记.\
       标记可以作为被跳转的目标, 当然如果你再从逻辑导出标记就没有了
 
