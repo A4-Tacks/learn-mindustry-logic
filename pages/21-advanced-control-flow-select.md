@@ -25,6 +25,7 @@ select n {
     }
 }
 end:
+printflush message1
 ```
 
 我们可以构建出一张跳转子表, 在我们的预期中, n为整数且 $0 \le n \le 2$
@@ -44,6 +45,7 @@ n1:
 n2:
     print 2
 end:
+printflush message1
 ```
 
 观察上述代码, 根据前面讲过的流程,
