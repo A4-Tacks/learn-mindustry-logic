@@ -1,6 +1,9 @@
 # 开始学习bang语言
 在前文中, 我们有提到一种方便的语言, 这可以方便复杂逻辑的编写.
 
+> [!WARNING]
+> 这篇教程bang相关的部分还不完善, 可能并不适合入门和写在这里
+
 项目地址: <https://github.com/A4-Tacks/mindustry_logic_bang_lang>\
 学习引导: <https://github.com/A4-Tacks/mindustry_logic_bang_lang/blob/main/examples/README.md>
 
