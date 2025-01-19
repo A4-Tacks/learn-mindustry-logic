@@ -38,7 +38,7 @@ set str "Hello, World"
 print str
 ```
 
-(类型) content
+content
 ---
 表示某个类型, 不是指逻辑的值类型, 而是例如建筑的类型, 单位的类型等
 
@@ -53,7 +53,7 @@ print a; print ","; print b
 ---
 表示某个特定的建筑, 而不是某类建筑
 
-注意, 这和 content 不同, content 描述了某类建筑, 比如路由器 (`@sorter`),
+注意, 这和 content 不同, content 可以描述某类建筑, 比如路由器 (`@sorter`),
 而 building 描述了某个建造出来的建筑, 比如链接的 sorter1
 
 ```
