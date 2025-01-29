@@ -67,7 +67,7 @@ END{
     printf "\0"
 }
 ' "${index_file}")
-build_file=${id:?}-$file_name.md
+build_file=${id:?}-${file_name%.md}.md
 
 echo "${page_name@A}" >&2
 echo "${build_file@A}" >&2
