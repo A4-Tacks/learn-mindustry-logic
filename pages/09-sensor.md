@@ -14,7 +14,7 @@
 
 以下是一个代码示例, 可以打印出每个链接的建筑坐标
 
-```
+```gas
 set i 0
 loop:
     getlink block i

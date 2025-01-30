@@ -14,7 +14,7 @@
 
 一个简单的例子, 使用`packcolor`来调色绘制一个红底蓝色方块
 
-```
+```gas
 packcolor red 1 0 0 1
 packcolor blue 0 0 1 1
 draw col red 0 0 0 0 0

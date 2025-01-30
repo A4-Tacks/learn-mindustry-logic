@@ -8,7 +8,7 @@
 
 一个简单的用例, 只是展示格式, 并不做什么事:
 
-```
+```gas
 uradar enemy any any distance 0 1 result;
 ```
 

@@ -21,7 +21,7 @@
 
 比如我们编写一个函数, 打印一段话, 并返回, 调用两次
 
-```
+```gas
 jump defined always 0 0
 print_msg:
     print msg
@@ -49,7 +49,7 @@ printflush message1
 
 比如以下一段代码, 是斐波那契的递归定义式, 不考虑尾递归等情况
 
-```
+```gas
 set stack_top -1
 jump defined always 0 0
 fib:

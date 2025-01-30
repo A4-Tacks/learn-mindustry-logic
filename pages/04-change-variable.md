@@ -5,7 +5,7 @@ set
 ---
 这是一个普通的语句, 有两个参数, 行为是直接将右边参数[^1]的值赋值[^2]给左边
 
-```
+```gas
 set msg "a value"
 print msg
 printflush message1
@@ -20,7 +20,7 @@ op (operation) (操作/运算)
 ---
 这是对1至2个参数进行某些运算后, 并将值赋给另一个变量的语句
 
-```
+```gas
 set m 2
 op add n m 3
 print m
@@ -35,7 +35,7 @@ printflush message1
 它将当前m的值加上了3赋给n, 而此时此地, m的值是2, 所以n在这里被赋予了值5,
 它应打印出
 
-```
+```gas
 2
 5
 ```

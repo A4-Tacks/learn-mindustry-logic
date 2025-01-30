@@ -18,7 +18,7 @@
 以下是一个简单示例代码,
 它会将所有的星辉(flare)控制聚集到逻辑连接的一个电弧(arc)炮台射击点.
 
-```
+```gas
 sensor shooting arc1 @shooting
 jump skip equal shooting false # 没有开火时忽略选点
     sensor x arc1 @shootX
@@ -40,7 +40,7 @@ $\mid \overrightarrow {(x_u - x_t,\ y_u - y_t)} \mid$
 
 以下是一段代码
 
-```
+```gas
 sensor ux @unit @x
 sensor uy @unit @y
 op sub dx ux tx
@@ -56,7 +56,7 @@ op lessThan within len 10
 以下是一段代码, x坐标为奇数时, 会将自身复制一份在右边.
 事先链接好四周建筑的位置, 这样新逻辑一被放下就会链接从而终止建筑条件
 
-```
+```gas
 jump 0 notEqual @links 0
 op mod c @thisx 2
 jump 0 equal c 0

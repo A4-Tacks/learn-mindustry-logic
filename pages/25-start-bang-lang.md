@@ -17,7 +17,7 @@
 
 接着我们测试它是否能够正确的执行, 在 shell[^2]/cmd 中输入以下代码:
 
-```
+```shell
 mindustry_logic_bang_lang cl <<< 'print "Hello, World!";'
 ```
 
@@ -28,7 +28,7 @@ mindustry_logic_bang_lang cl <<< 'print "Hello, World!";'
 
 它应输出编译为mdt逻辑的如下代码
 
-```
+```gas
 print "Hello, World!"
 ```
 

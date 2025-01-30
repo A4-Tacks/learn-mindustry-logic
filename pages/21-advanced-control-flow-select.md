@@ -9,7 +9,7 @@
 
 设我们有如下要实现的结构
 
-```
+```gas
 select n {
     {
         print 0;
@@ -30,7 +30,7 @@ printflush message1
 
 我们可以构建出一张跳转子表, 在我们的预期中, n为整数且 $0 \le n \le 2$
 
-```
+```gas
 op add @counter @counter n
 jump n0 always 0 0
 jump n1 always 0 0
@@ -60,7 +60,7 @@ printflush message1
 我们之间将目标行放在那里即可.
 
 接着我们可以扩展一下, 每个块只有一个数要跳转过去且每个块长度相同时, 我们可以采取如下形式
-```
+```gas
 op mul inc n 3 # 这里先计算出n去乘每个块行数应该产生多少偏移
 op add @counter @counter inc # 偏移到块行数的正整数倍
     print 0
@@ -95,7 +95,7 @@ printflush message1
 
 `case 0`表示当n为0时执行下面一块代码, 后面的`if`表示但是还要满足if的条件
 
-```
+```gas
 gswitch n {
 case 0 if a < b:
     print 0 "yes";
@@ -111,7 +111,7 @@ printflush message1;
 
 修整后, 我们将会得到以下代码
 
-```
+```gas
 op mul __1 n 2
 op add @counter @counter __1
     jump n0g lessThan a b # case 0 符合条件
