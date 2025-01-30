@@ -58,7 +58,7 @@
 | payloadType       | 荷载类型      |
 | id                | 编号          |
 | enabled           | 启用          |
-| config            | 设置[^1]      |
+| config/configure  | 设置[^1]      |
 | color             | 颜色          |
 
 
