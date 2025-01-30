@@ -36,7 +36,7 @@ ucontrol move x y 0 0 0
 就不要使用这个, 因为是控制语句, 会造成控制状态.
 
 如果不需要控制状态, 请手动应用公式计算距离:
-$\mid \overrightarrow {(x_u - x_t, y_u - y_t)} \mid$
+$\mid \overrightarrow {(x_u - x_t,\ y_u - y_t)} \mid$
 
 以下是一段代码
 
