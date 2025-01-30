@@ -20,7 +20,7 @@ if分支结构
 比如`if a < b { print 1; } else { print 2; } printflush message1;`,
 我们可以写成这样:
 
-```
+```gas
 jump true lessThan a b
     print 2
 jump end always 0 0
@@ -32,7 +32,7 @@ printflush message1
 
 当然对于连续的多个条件我们可以直接以此类推, 参考上述写法编写这样的逻辑
 
-```
+```gas
 if a < b {
     print 1;
 } else {
@@ -50,7 +50,7 @@ printflush message1;
 
 然后我们就能从上述代码得到以下展开式
 
-```
+```gas
 jump true1 lessThan a b
     jump true2 lessThan c d
         print 3
@@ -73,7 +73,7 @@ do-while循环结构
 
 应展开为
 
-```
+```gas
 set i 0
 cont:
     print i
@@ -92,7 +92,7 @@ while循环结构
 
 应展开为
 
-```
+```gas
 set i 0
 jump break greaterThanEq i 3
 cont:
@@ -114,7 +114,7 @@ gwhile循环结构
 
 应展开为
 
-```
+```gas
 set i 0
 jump cond always 0 0
 cont:

@@ -13,7 +13,7 @@
 
 比如以下在每一个链接的信息板中打印这个信息板的编号
 
-```
+```gas
 set n 0
 loop:
     getlink msg n

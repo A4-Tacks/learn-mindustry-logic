@@ -20,7 +20,7 @@
 
 示例代码, 这将会打印出`0,1,2,3,4`
 
-```
+```gas
 set i 0
 loop1:
     jump sk1 equal i 0 # 在头部跳过打印逗号
@@ -37,7 +37,7 @@ printflush message1
 
 上述代码再从游戏中导出后jump会变成行号的形式, 如下
 
-```
+```gas
 set i 0
 jump 3 equal i 0
 print ","
@@ -52,7 +52,7 @@ printflush message1
 -------------------------------------------------------------------------------
 逻辑块解析跳转标记时, 不会将最后一行的标记链接到最头部, 例如如下代码
 
-```
+```gas
 set var true
 jump label always 0 0
     print "skipped"
@@ -64,14 +64,14 @@ label:
 要是想要如同预期的那样跳转到最后一行然后回到首行,
 我们需要将标签挪至首行或者使其不在尾部, 例如如下两种做法
 
-```
+```gas
 label:
 set var true
 jump label always 0 0
     print "skipped"
 ```
 
-```
+```gas
 set var true
 jump label always 0 0
     print "skipped"

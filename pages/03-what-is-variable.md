@@ -11,7 +11,7 @@
 ---
 普通的数字类型, 如字面量中的数字, 其类型就是这个
 
-```
+```gas
 set a 1
 set b 2.5
 set c -5
@@ -23,7 +23,7 @@ print a; print ","; print b; print ","; print c
 表示什么都没有的一种类型, 发生无效数学运算比如除以0后,
 或者一个还没有赋值[^1]的变量, 其值都会是空值
 
-```
+```gas
 # a 未赋值, 所以是null值
 op div b 3 0
 print a; print ","; print b
@@ -33,7 +33,7 @@ print a; print ","; print b
 ---
 表示一段文本, 比如字面量中的字符串, 其类型就是这个
 
-```
+```gas
 set str "Hello, World"
 print str
 ```
@@ -42,7 +42,7 @@ content
 ---
 表示某个类型, 不是指逻辑的值类型, 而是例如建筑的类型, 单位的类型等
 
-```
+```gas
 set a @sorter # 路由器
 getlink building 0
 sensor b building @type
@@ -56,7 +56,7 @@ print a; print ","; print b
 注意, 这和 content 不同, content 可以描述某类建筑, 比如路由器 (`@sorter`),
 而 building 描述了某个建造出来的建筑, 比如链接的 sorter1
 
-```
+```gas
 getlink a 0
 print a # 可能输出和 content 的结果很像, 变量表能看到类型
 ```
@@ -65,7 +65,7 @@ print a # 可能输出和 content 的结果很像, 变量表能看到类型
 ---
 这个值表示某个队伍, 一般出现的很少不用去理会
 
-```
+```gas
 set a @crux # 表示红队, 通常是敌方
 print a
 ```
@@ -76,7 +76,7 @@ print a
 ---
 这个值表示某个特定的单位, 而非某类单位 (content)
 
-```
+```gas
 # 注: @unit 是一个环境变量, 代表目前绑定的单位, 类型是 unit
 ubind @flare # 绑定一个场上的新星
 sensor x @unit @x # 获取其x坐标
@@ -88,7 +88,7 @@ print @unit; print ": "; print x; print ","; print y
 ---
 这个值很普通, 一般是在某些特殊的地方代表某一个具体的意义, 不用去深究
 
-```
+```gas
 # 注: 环境变量是自带的变量, 后面会讲
 set x @type # 比如 sensor 的选项就是一个环境变量, 类型是 enum
 print x

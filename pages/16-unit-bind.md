@@ -28,7 +28,7 @@
 
 以下是一个示例程序, 它会实时打印某个玩家单位的坐标
 
-```
+```gas
 # find player unit
 set id 0
 loop:

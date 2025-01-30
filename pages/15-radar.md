@@ -37,7 +37,7 @@ radar, 筛选器A, 筛选器B, 筛选器C, 排序依据, 充当雷达的建筑, 
 
 以下是一个简单的小例子, 让链接的炮塔攻击距离最近的友方玩家控制的单位
 
-```
+```gas
 getlink turret i
 radar ally player any distance turret 1 unit
 op notEqual shooted unit null

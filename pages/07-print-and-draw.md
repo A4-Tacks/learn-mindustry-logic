@@ -39,7 +39,7 @@
 
 一个使用例子, 如下
 
-```
+```gas
 draw clear 0xFF 0xAD 0xAD 0 0 0    # 清空背景
 draw color 0x80 0xED 0x99 0xFF 0 0 # 设置绘制颜色
 draw rect 20 20 40 20 0 0

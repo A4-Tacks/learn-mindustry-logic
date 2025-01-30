@@ -50,7 +50,7 @@
 
 这有着成熟的算法, 以下是一段伪代码
 
-```
+```python
 def build(cond, target)
     if cond.type == "&&"
         tmp = tmp_tag()
@@ -73,7 +73,7 @@ def build(cond, target)
 
 比如将以下条件转换成逻辑 `jump target (a < b && c < d) || e < f`
 
-```
+```gas
 # 首先从顶部的短路或运算进入
 # 开始构建左边的 (a < b && c < d)
 # 这是一个与运算, 所以我们将左边条件反转为(a >= b),

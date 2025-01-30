@@ -22,7 +22,7 @@
 
 以下是一个不断设置分类器的小逻辑, 用于演示
 
-```
+```gas
 set i 0
 loop:
     lookup item my_item i

@@ -17,7 +17,7 @@
 以下是一段代码示例, 可以在链接的钍反应堆冷冻液少于指定值时将其禁用,
 从而避免直接爆炸
 
-```
+```gas
 getlink block i # i的默认值是null, 自动转换到数字则为0
 sensor liquid block @cryofluid # 通过冷冻液的content获取反应堆冷冻液量
 op greaterThan enabled liquid 20 # 判定开启标志为冷冻液量大于20
