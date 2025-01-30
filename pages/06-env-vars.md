@@ -12,8 +12,9 @@
 - `true`: `1`
 - `false`: `0`
 - `null`: `null`
-- `@copper`: 铜的类型 (content)
+- `@copper`: 铜的 content
 - `@time`: 目前游戏进行的时间 (秒)
+- `@links`: 当前链接的建筑总数
 - `@counter`[^1]: 执行完这行后要执行的行号 (可被赋值)
 
 并且, 当逻辑链接建筑时,
