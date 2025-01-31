@@ -12,6 +12,7 @@
 - **@thisx**: 逻辑块的 x 坐标, 类似 `sensor thisx @this @x`
 - **@thisy**: 逻辑块的 y 坐标, 类似 `sensor thisy @this @y`
 - **@links**: 逻辑块链接的建筑数量
+- **@unit**: 当前绑定的单位
 - **@ipt**: 逻辑块在一个标准帧[^1]内执行多少行
 - **@counter**: 逻辑块内当前行之后将要执行的行号
 
