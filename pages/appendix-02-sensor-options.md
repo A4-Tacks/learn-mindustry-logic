@@ -56,13 +56,15 @@
 | name              | 名称          |
 | payloadCount      | 荷载数量      |
 | payloadType       | 荷载类型      |
-| id                | 编号          |
+| id                | 编号[^2]      |
 | enabled           | 启用          |
 | config/configure  | 设置[^1]      |
 | color             | 颜色          |
 
 
 [^1]: 比如分类器选中的物品, 注意不要和build系列语句的config记混
+
+[^2]: 获取 content 的对应 lookup 语句的编号, 注意是 content 而不是 unit building 等
 
 ---
 [目录](./README.md)
