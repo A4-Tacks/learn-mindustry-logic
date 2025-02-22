@@ -27,7 +27,7 @@
 | not           | 按位取反     |
 | max           | 最大值       |
 | min           | 最小值       |
-| angle         | 向量幅角     |
+| angle         | 向量幅角[^1] |
 | angleDiff     | 幅角差绝对值 |
 | len           | 向量模长     |
 | noise         | 二维单形噪声 |
