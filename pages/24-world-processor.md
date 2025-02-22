@@ -1,6 +1,6 @@
 # 世界处理器
 还记得第一章提到的世界处理器吗? 它是一种特殊的处理器,
-正常情况应只被地图编辑器或者特殊的mod才可以放置.
+正常情况应只被地图编辑器或者特殊的mod才可以放置与编辑.
 
 世界处理器相比普通的处理器拥有一些额外的语句, 可以操作的东西更多.
 
@@ -33,7 +33,7 @@ fetch buildCount    result      @sharded 0 0            # 获取场上的建筑�
 
 ```gas
 set i 0
-# 我们应假定建筑不少于一个
+# 我们应假定单位不少于一个
 fetch unitCount unitCount @sharded 0 0
 loop:
     fetch unit unit @sharded i 0
