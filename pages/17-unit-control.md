@@ -35,7 +35,7 @@ ucontrol move x y 0 0 0
 ```
 
 
-简单的对于一些控制操作的注意事项
+避免不必要的控制
 ---
 对于within来判定是否接近某点时, 记得如果你不需要控制状态,
 就不要使用这个, 因为是控制语句, 会造成控制状态.
@@ -54,6 +54,8 @@ op len len dx dy
 op lessThan within len 10
 ```
 
+
+建造复杂建筑
 ---
 对于build建造的建筑需要额外信息, 如带桥连接点或者逻辑内容等, 可以借助config位,
 它输入一个building类型值, 可以把另一个建筑的config复制过来
@@ -75,6 +77,8 @@ ucontrol build tx @thisy type r @this
 注: `@this`变量表示逻辑自身的building环境变量,
 而`@thisx`是逻辑自身位置的x坐标环境变量
 
+
+单位控制语句中的命名问题
 ---
 > [!WARNING]
 > 对于`ucontrol unbind`, 命名并不合理,
