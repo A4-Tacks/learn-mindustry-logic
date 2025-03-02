@@ -33,6 +33,25 @@ jump loop lessThan n @links
 当然你也可以不从0开始, 跳过某些事先链接好的建筑
 
 
+使用取余简化
+---
+对于一些常用情况, 想简单的让逻辑操作每一个链接的建筑, 那么可以将上述写法简化
+
+```gas
+getlink msg n
+print n
+printflush msg
+op add n n 1
+op mod n n @links # 当n==@links时, 由于取余的性质n将变为0
+```
+
+这种用法对于简单的逻辑, 非常方便
+
+并且相较于之前的方法, 可以在循环开始时少执行一个 set
+
+只是这种方法更为死板一些
+
+
 ---
 [上一章](./07-print-and-draw.md)
 [目录](./README.md)
