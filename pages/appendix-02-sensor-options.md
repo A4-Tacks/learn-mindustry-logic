@@ -15,14 +15,14 @@
 | 属性              | 翻译          |
 | ---               | ---           |
 | totalItems        | 总物品数      |
-| firstItem         | 第一个物品    |
+| firstItem         | 首个物品      |
 | totalLiquids      | 总液体数      |
 | totalPower        | 总电力        |
 | itemCapacity      | 物品容量      |
 | liquidCapacity    | 液体容量      |
 | powerCapacity     | 电力容量      |
-| powerNetStored    | 电网储电      |
-| powerNetCapacity  | 电网电容量    |
+| powerNetStored    | 电网电池储电  |
+| powerNetCapacity  | 电网电池容量  |
 | powerNetIn        | 电网净输入    |
 | powerNetOut       | 电网净输出    |
 | ammo              | 弹药          |
@@ -35,7 +35,7 @@
 | armor             | 护甲          |
 | efficiency        | 效率          |
 | progress          | 进度          |
-| timescale         | 时间比例      |
+| timescale         | 时间系数      |
 | rotation          | 朝向          |
 | x                 | X坐标         |
 | y                 | Y坐标         |
@@ -49,7 +49,7 @@
 | cameraHeight      | 相机高度      |
 | size              | 大小          |
 | solid             | 是否实心      |
-| dead              | 已死亡        |
+| dead              | 是否已死亡    |
 | range             | 范围          |
 | shooting          | 是否射击      |
 | boosting          | 是否助推      |
@@ -66,7 +66,7 @@
 | payloadCount      | 荷载数量      |
 | payloadType       | 荷载类型      |
 | id                | 编号[^2]      |
-| enabled           | 启用          |
+| enabled           | 是否启用      |
 | config/configure  | 设置[^1]      |
 | color             | 颜色          |
 
