@@ -48,7 +48,7 @@
 | cameraY           | 相机Y         |
 | cameraWidth       | 相机宽度      |
 | cameraHeight      | 相机高度      |
-| size              | 大小          |
+| size              | 大小[^4]      |
 | solid             | 是否实心      |
 | dead              | 是否已死亡    |
 | range             | 范围          |
@@ -79,6 +79,8 @@
 [^2]: 获取 content 的对应 lookup 语句的编号, 注意是 content 而不是 unit building 等
 
 [^3]: 指定内存中能存储多少个数据, 例如 cell 是 64 个, bank 是 512 个
+
+[^4]: 不仅能获取建筑、单位的大小, 还能获取字符串的大小(utf-16长度)
 
 ---
 [目录](./README.md)
