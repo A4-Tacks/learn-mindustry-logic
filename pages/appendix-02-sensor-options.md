@@ -51,9 +51,12 @@
 | size              | 大小[^4]      |
 | solid             | 是否实心      |
 | dead              | 是否已死亡    |
+| displayWidth      | 显示屏宽度    |
+| displayHeight     | 显示屏高度    |
 | range             | 范围          |
 | shooting          | 是否射击      |
 | boosting          | 是否助推      |
+| bufferUsage       | 缓冲区draw数  |
 | mineX             | 挖矿点X       |
 | mineY             | 挖矿点Y       |
 | mining            | 是否正在挖矿  |
