@@ -25,6 +25,66 @@ drawflush display1
 ```
 
 
+打包颜色字面量
+---
+可以直接使用字面量来创建打包颜色, 就像创建一个数字值一样
+
+例如:
+
+```gas
+set color %ff00ff
+draw clear 0 0 0 0 0 0
+draw col color 0 0 0 0 0
+draw rect 30 30 20 20 0 0
+drawflush display1
+```
+
+你可以使用如 `%ff00ff` 的 16 进制 RGB 颜色代码,
+或者 `%ff00ffff` 的 16 进制 RGBA 颜色代码 来创建颜色
+
+在高版本(约为148)中, 你还可以使用预设颜色语法, 如 `%[red]` 来创建颜色
+
+
+拆解打包颜色
+---
+`packcolor` 的本质是利用给定颜色, 强行创造一个特殊的数字来表示颜色,
+这给了我们可趁之机, 例如:
+
+```gas
+set color1  %1c2b3d4e
+set color2 0x1c2b3d4e
+op idiv depack color1 %00000001 # 运算以解包颜色
+
+print "{0}\n{1}"
+format color2
+format depack # 472595790  0x1c2b3d4e
+printflush message1
+```
+
+可以看到, 我们之间将其解开成了 RGBA 格式,
+如果需要解开成 RGB 格式可以将除数改为 `%00000100`
+
+如果需要获取确切的 RGB 值, 可以利用位运算来完成:
+
+```gas
+set color1  %1c2b3d4e
+set color2 0x1c2b3d4e
+op idiv depack color1 %00000100 # 解包为 RGB
+
+op shr r depack 16
+op shr t depack 8
+op and g t 255
+op and b depack 255
+
+print "{0}\n{1},{2},{3}"
+format color2
+format r # 28  0x1c
+format g # 43  0x2b
+format b # 61  0x3d
+printflush message1
+```
+
+
 ---
 [上一章](./13-lookup.md)
 [目录](./README.md)
