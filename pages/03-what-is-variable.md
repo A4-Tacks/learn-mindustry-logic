@@ -56,18 +56,21 @@ print str
 > 而不是 "内容"、"类型"、"种类" 等用词, 以防引起误解
 
 ```gas
-set a @sorter # 路由器
+set a @sorter # 路由器的 content
 getlink building 0
-sensor b building @type
-print a; print ","; print b
+sensor c building @type
+print a; print ","; print c
 ```
+
+> [!TIP]
+> 可以使用 `sensor result input @type` 获取 building 和 unit 的 content
 
 (建筑) building
 ---
-表示某个特定的建筑, 而不是某类建筑
+表示某个特定的建筑, 而不是某类建筑 (content)
 
-注意, 这和 content 不同, content 可以描述某类建筑, 比如路由器 (`@sorter`),
-而 building 描述了某个建造出来的建筑, 比如链接的 sorter1
+注意, 这和 content 不同, content 可以描述某类建筑, 例如路由器 (`@sorter`),
+而 building 描述了某个建造出来的建筑, 比如链接到的 sorter1
 
 ```gas
 getlink a 0
