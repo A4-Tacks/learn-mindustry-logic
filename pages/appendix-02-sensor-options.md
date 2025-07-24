@@ -56,7 +56,8 @@
 | range             | 范围          |
 | shooting          | 是否射击      |
 | boosting          | 是否助推      |
-| bufferUsage       | 缓冲区draw数  |
+| bufferSize        | 缓冲区待绘制数|
+| operation         | 方块操作次数  |
 | mineX             | 挖矿点X       |
 | mineY             | 挖矿点Y       |
 | mining            | 是否正在挖矿  |
