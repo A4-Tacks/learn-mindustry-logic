@@ -86,6 +86,43 @@ end # 这样会多执行一行 end, 或许会变慢?
       区分null和0的情况相对比较常见, 所以我们需要使用严格相等, 也就是`strictEqual`
 
 
+使用 select 简化通过条件选择值
+-------------------------------------------------------------------------------
+在 150 版本中, 加入了一个新语句: `select`
+
+该语句通过一个单一的 jump 条件, 在两个值中选一个赋值给结果, 例如:
+
+```gas
+set a 2
+set b 3
+
+select result lessThan a b 3 5
+
+print result
+printflush message1
+```
+
+相当于
+
+```gas
+set a 2
+set b 3
+
+jump yes lessThan a b
+    set result 5
+jump finish always 0 0
+yes:
+    set result 3
+finish:
+
+print result
+printflush message1
+```
+
+对于这种通过单一条件在两值中选一个的情况,
+可以使用 `select` 更为方便并且语句数更少
+
+
 ---
 [上一章](./04-change-variable.md)
 [目录](./README.md)
