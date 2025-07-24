@@ -110,6 +110,26 @@ printflush message1
 > 例如某个生僻字 `"𪙛"`
 
 
+### 读取信息板
+自 150 版本起, 类似读取字符串, `read` 语句还可以从信息板中读取,
+不过获取长度使用 `@bufferSize` 而不是 `@size`
+
+例如将 `message1` 的信息转移到 `message2`
+
+```gas
+set i 0
+sensor size message1 @bufferSize
+jump finish equal size 0
+loop:
+    read char message1 i
+    printchar char
+    op add i i 1
+jump loop lessThan i size
+finish:
+printflush message2
+```
+
+
 ---
 [上一章](./10-control.md)
 [目录](./README.md)
