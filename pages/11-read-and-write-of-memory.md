@@ -130,6 +130,26 @@ printflush message2
 ```
 
 
+### 读取画板 (Canvas)
+自 150 版本起, 类似读写内存库, `read` 和 `write` 语句还可以从画板中读取,
+长度为 144 (12x12), 不过边缘容易被边框遮住
+
+需要注意的是, 仅支持写入 `[0,7] 范围的整数值`
+
+例如将 `canvas1` 的图形转移到 `canvas2`
+
+```gas
+set i 0
+set size 144
+loop:
+    read color canvas1 i
+    write color canvas2 i
+    op add i i 1
+jump loop lessThan i size
+printflush message2
+```
+
+
 ---
 [上一章](./10-control.md)
 [目录](./README.md)
