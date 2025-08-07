@@ -84,6 +84,12 @@ format b # 61  0x3d
 printflush message1
 ```
 
+> [!TIP]
+> 在高版本 (150) 中, 添加了一个新语句可以快速完成此操作,
+> 例如如下例子一次性将颜色中 RGBA 解出并赋值给变量 r g b a
+>
+> `unpackcolor r g b a color`
+
 
 ---
 [上一章](./13-lookup.md)
