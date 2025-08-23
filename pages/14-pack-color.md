@@ -89,6 +89,8 @@ printflush message1
 > 例如如下例子一次性将颜色中 RGBA 解出并赋值给变量 r g b a
 >
 > `unpackcolor r g b a color`
+>
+> **注意**: r g b a 的值并不是 `[0,255]` 而是 `[0,1]`
 
 
 ---
