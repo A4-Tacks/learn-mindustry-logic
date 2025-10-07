@@ -51,5 +51,5 @@ print "Hello, World!"
 学习 Bang 请移步本章开头的**学习引导**链接处学习
 
 ---
-[上一章](./24-world-processor.md)
+[上一章](./25-compilers.md)
 [目录](./README.md)
