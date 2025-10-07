@@ -10,7 +10,7 @@
 | 名称          | 特点                       | 参考语言       | 安装难度                                             | 编辑条件                                                  |
 | ---           | ---                        | ---            | ---                                                  | ---                                                       |
 | [mindcode]    | 极强的优化                 | 无             | B-下载jar, 运行需要Java环境                          | 有一个网页编辑器, 和扩展语言                              |
-| [mlogjs]      | 功能偏弱, 且生成冗余代码   | JavaScript     | B-需要使用npm安装依赖, 有在线版本且很不错            | 直接使用 JavaScript/TypeScript 的补全, 有很好的网页编辑器 |
+| [mlogjs]      | 参考js, 好上手, 编辑体验好 | JavaScript     | B-需要使用npm安装依赖, 有在线版本且很不错            | 直接使用 JavaScript/TypeScript 的补全, 有很好的网页编辑器 |
 | [pyndustric]  | 功能偏弱, 不过有内联函数   | Python         | A-需要处理python依赖, 需要python环境                 | 直接使用 Python 代码的补全                                |
 | [bang-lang]   | 极强灵活度, 操作生成的代码 | 逻辑语言       | C-下载可执行程序, 控制台运行                         | 使用 VSCode 进行编辑, 具有简单高亮、代码片段和词法补全    |
 | [go-mlog]     | 内置支持了自动递归函数     | Go             | D-下载可执行程序, 控制台执行, 有在线版本             | 直接使用 Go 代码的补全                                    |
