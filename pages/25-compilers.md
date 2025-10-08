@@ -14,7 +14,6 @@
 | [pyndustric]  | 功能偏弱, 不过有内联函数   | Python         | A-需要处理python依赖, 需要python环境                 | 直接使用 Python 代码的补全                                |
 | [bang-lang]   | 极强灵活度, 操作生成的代码 | 逻辑语言       | C-下载可执行程序, 控制台运行                         | 使用 VSCode 进行编辑, 具有简单高亮、代码片段和词法补全    |
 | [go-mlog]     | 内置支持了自动递归函数     | Go             | D-下载可执行程序, 控制台执行, 有在线版本             | 直接使用 Go 代码的补全                                    |
-| [c2logic]     | 较为简陋, 似乎问题较多     | C              | A-需要处理python依赖, 需要python环境, 需要cpp编译器  | 直接使用 C 语言代码的补全                                 |
 
 如果你已经学过 '参考语言' 的话, 学习对应的编译器将会较为简单
 
@@ -30,7 +29,6 @@
 | [pyndustric]  | C-结构稍差         | -        | -      | +        | +          | -        | -        |
 | [bang-lang]   | B-无优化, 结构良好 | +        | +      | +        | +          | #        | #        |
 | [go-mlog]     | D-经常更慢         | -        | +      | ?        | +          | +        | ?        |
-| [c2logic]     | ?-结果很奇怪       | ?        | -      | ?        | +          | ?        | ?        |
 
 `-` 为未支持, `+` 为已支持, `?` 为未知, `#` 为半手动支持
 
@@ -44,7 +42,6 @@
 | [pyndustric]  | D-仅README少量例子                           |
 | [bang-lang]   | B-中英双版本教程, 质量勉强, 高级部分内容极长 |
 | [go-mlog]     | C-英文独立wiki, 内容较少                     |
-| [c2logic]     | E-无结果示例, 无讲解, 输出较难理解           |
 
 
 ## 以下是版本跟进情况
@@ -56,7 +53,6 @@
 | [pyndustric]  | D-基本停滞                                     |
 | [bang-lang]   | B-目前较不活跃, 但是由于其设计不跟进也影响不大 |
 | [go-mlog]     | D-基本停滞                                     |
-| [c2logic]     | D-基本停滞                                     |
 
 
 
@@ -65,7 +61,6 @@
 [pyndustric]: https://github.com/Lonami/pyndustric
 [bang-lang]: https://github.com/A4-Tacks/mindustry_logic_bang_lang
 [go-mlog]: https://github.com/Vilsol/go-mlog
-[c2logic]: https://github.com/SuperStormer/c2logic
 
 ---
 [上一章](./24-world-processor.md)
