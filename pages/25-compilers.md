@@ -14,6 +14,7 @@
 | [pyndustric]  | 功能偏弱, 不过有内联函数   | Python         | A-需要处理python依赖, 需要python环境                 | 直接使用 Python 代码的补全                                |
 | [bang-lang]   | 极强灵活度, 操作生成的代码 | 逻辑语言       | C-下载可执行程序, 控制台运行                         | 使用 VSCode 进行编辑, 具有简单高亮、代码片段和词法补全    |
 | [go-mlog]     | 内置支持了自动递归函数     | Go             | D-下载可执行程序, 控制台执行, 有在线版本             | 直接使用 Go 代码的补全                                    |
+| [mlogx]       | 极端简陋, 增加了少量宏语句 | 逻辑语言       | A-需要使用npm安装依赖                                | 纯文本编辑器, 如记事本等                                  |
 
 如果你已经学过 '参考语言' 的话, 学习对应的编译器将会较为简单
 
@@ -29,6 +30,7 @@
 | [pyndustric]  | C-结构稍差         | -        | -      | +        | +          | -        | -        |
 | [bang-lang]   | B-无优化, 结构良好 | +        | +      | +        | +          | #        | #        |
 | [go-mlog]     | D-经常更慢         | -        | +      | ?        | +          | +        | ?        |
+| [mlogx]       | B-基本没做什么     | -        | -      | -        | +          | -        | -        |
 
 `-` 为未支持, `+` 为已支持, `?` 为未知, `#` 为半手动支持
 
@@ -42,6 +44,7 @@
 | [pyndustric]  | D-仅README少量例子                           |
 | [bang-lang]   | B-中英双版本教程, 质量勉强, 高级部分内容极长 |
 | [go-mlog]     | C-英文独立wiki, 内容较少                     |
+| [mlogx]       | B-英文独立文档, 基本大致介绍                 |
 
 
 ## 以下是版本跟进情况
@@ -53,6 +56,7 @@
 | [pyndustric]  | D-基本停滞                                     |
 | [bang-lang]   | B-目前较不活跃, 但是由于其设计不跟进也影响不大 |
 | [go-mlog]     | D-基本停滞                                     |
+| [mlogx]       | C-目前较不活跃                                 |
 
 
 
@@ -61,6 +65,7 @@
 [pyndustric]: https://github.com/Lonami/pyndustric
 [bang-lang]: https://github.com/A4-Tacks/mindustry_logic_bang_lang
 [go-mlog]: https://github.com/Vilsol/go-mlog
+[mlogx]: https://github.com/BalaM314/mlogx
 
 ---
 [上一章](./24-world-processor.md)
