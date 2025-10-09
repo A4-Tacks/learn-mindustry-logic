@@ -67,6 +67,8 @@
 [go-mlog]: https://github.com/Vilsol/go-mlog
 [mlogx]: https://github.com/BalaM314/mlogx
 
+> 如果发现编译器特性等描述错误, 请打开一个 issue 来讨论
+
 ---
 [上一章](./24-world-processor.md)
 [目录](./README.md)
