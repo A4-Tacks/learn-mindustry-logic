@@ -76,7 +76,6 @@
 | [mlogpp]      | E-停滞(2023)                                   |
 
 
-
 [mindcode]: https://github.com/cardillan/mindcode
 [mlogjs]: https://github.com/mlogjs/mlogjs
 [pyndustric]: https://github.com/Lonami/pyndustric
@@ -84,8 +83,23 @@
 [go-mlog]: https://github.com/Vilsol/go-mlog
 [mlogx]: https://github.com/BalaM314/mlogx
 [mlogpp]: https://github.com/albi-c/mlogpp
+[mlogls]: https://github.com/JeanJPNM/mlogls
+[c2logic]: https://github.com/SuperStormer/c2logic
+[minasm]: https://github.com/yangfl/minasm
 
 > 如果发现编译器特性等描述错误, 请打开一个 issue 来讨论
+
+
+不推荐的编译器
+===============================================================================
+在上述列表中, 有意的忽略了一些编译器, 原因如下
+
+| 名称          | 原因                                                                 |
+| ---           | ---                                                                  |
+| [c2logic]     | 似乎bug极多, 生成的代码非常古怪                                      |
+| [mlogls]      | 零文档零示例                                                         |
+| [minasm]      | 项目结构并不像一个项目, 而是将一组前端代码打包, 尝试浏览器打开, 失败 |
+
 
 ---
 [上一章](./24-world-processor.md)
