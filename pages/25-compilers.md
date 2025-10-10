@@ -16,6 +16,7 @@
 | [go-mlog]     | 内置支持了自动递归函数       | Go             | D-下载可执行程序, 控制台执行, 有在线版本             | 直接使用 Go 代码的补全                                    |
 | [mlogx]       | 极端简陋, 增加了少量宏语句   | 逻辑语言       | A-需要使用npm安装依赖                                | 纯文本编辑器, 如记事本等                                  |
 | [mlogpp]      | 优秀的编译期计算, 结构体抽象 | 无             | A-需要处理python依赖, 需要python环境                 | 似乎没有任何编辑支持                                      |
+| [slimlog]     | LISP风格                     | LISP           | B-需要安装rust环境                                   | 没有任何编辑支持                                          |
 
 如果你已经学过 '参考语言' 的话, 学习对应的编译器将会较为简单
 
@@ -33,6 +34,7 @@
 | [go-mlog]     | D-经常更慢           | -        | +      | ?        | +          | +        | ?        |
 | [mlogx]       | B-基本没做什么       | -        | -      | -        | +          | -        | -        |
 | [mlogpp]      | C-结构稍差, 较少优化 | -        | -      | +        | -          | -        | -        |
+| [slimlog]     | D-结构稍差, 冗余代码 | -        | -      | -        | -          | -        | -        |
 
 `-` 为未支持, `+` 为已支持, `?` 为未知, `#` 为半手动支持
 
@@ -48,6 +50,7 @@
 | [go-mlog]     | E-无                                           | D-基本没有                     | E-基本没有     |
 | [mlogx]       | E-无                                           | D-基本没有                     | E-基本没有     |
 | [mlogpp]      | A-很完善, 较为统一                             | C-少量                         | A-极强         |
+| [slimlog]     | E-无                                           | E-无                           | E-无, 有潜力   |
 
 
 ## 以下是文档情况
@@ -61,6 +64,7 @@
 | [go-mlog]     | C-英文独立wiki, 内容较少                     |
 | [mlogx]       | B-英文独立文档, 基本大致介绍                 |
 | [mlogpp]      | C-仅README少量例子, 与一点代码示例           |
+| [slimlog]     | D-有一些代码示例                             |
 
 
 ## 以下是版本跟进情况
@@ -74,6 +78,7 @@
 | [go-mlog]     | E-停滞(2022)                                   |
 | [mlogx]       | C-目前较不活跃                                 |
 | [mlogpp]      | E-停滞(2023)                                   |
+| [slimlog]     | E-停滞(2023)                                   |
 
 
 [mindcode]: https://github.com/cardillan/mindcode
@@ -86,6 +91,10 @@
 [mlogls]: https://github.com/JeanJPNM/mlogls
 [c2logic]: https://github.com/SuperStormer/c2logic
 [minasm]: https://github.com/yangfl/minasm
+[MlogEvo]: https://github.com/UMRnInside/MlogEvo
+[VCode]: https://github.com/Sirvoid/MindustryVCode
+[slimlog]: https://github.com/ThePotatoChronicler/slimlog
+
 
 > 如果发现编译器特性等描述错误, 请打开一个 issue 来讨论
 
@@ -99,6 +108,8 @@
 | [c2logic]     | 似乎bug极多, 生成的代码非常古怪                                      |
 | [mlogls]      | 零文档零示例                                                         |
 | [minasm]      | 项目结构并不像一个项目, 而是将一组前端代码打包, 尝试浏览器打开, 失败 |
+| [MlogEvo]     | 基本无文档, 存在一些bug, 影响正常使用                                |
+| [VCode]       | 零文档, 基本无示例, 无法在命令行运行, 测试不便                       |
 
 
 ---
