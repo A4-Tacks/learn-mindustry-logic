@@ -94,6 +94,7 @@
 [MlogEvo]: https://github.com/UMRnInside/MlogEvo
 [VCode]: https://github.com/Sirvoid/MindustryVCode
 [slimlog]: https://github.com/ThePotatoChronicler/slimlog
+[minpiler]: https://github.com/neumond/minpiler
 
 
 > 如果发现编译器特性等描述错误, 请打开一个 issue 来讨论
@@ -110,6 +111,7 @@
 | [minasm]      | 项目结构并不像一个项目, 而是将一组前端代码打包, 尝试浏览器打开, 失败 |
 | [MlogEvo]     | 基本无文档, 存在一些bug, 影响正常使用                                |
 | [VCode]       | 零文档, 基本无示例, 无法在命令行运行, 测试不便                       |
+| [minpiler]    | 零文档                                                               |
 
 
 ---
