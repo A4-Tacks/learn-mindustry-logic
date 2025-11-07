@@ -1,0 +1,67 @@
+# 术语表
+
+逻辑语句
+-------------------------------------------------------------------------------
+| 导出格式        | 长名称        | 描述                                                                                 |
+| -----------     | ------------- | ------------------------------------------------------------------------------------ |
+| noop            | Invalid       | 无效语句, 执行时什么都不会发生, 解析失败也会产生该语句                               |
+| read            | Read          | 读取, 如内存等                                                                       |
+| write           | Write         | 写入, 如内存等                                                                       |
+| draw            | Draw          | 绘制, 将一些绘制指令添加到绘制缓冲区                                                 |
+| print           | Print         | 打印, 用于将文本添加到文本缓冲区                                                     |
+| printchar       | Print Char    | 打印字符, 用于将数字对应的字符添加到文本缓冲区                                       |
+| format          | Format        | 格式化, 将文本缓冲区内一定格式的括号替换成指定文本                                   |
+| drawflush       | Draw Flush    | 绘制刷新, 将绘制缓冲区内绘制指令一次性应用在某个逻辑显示屏上, 并清空绘制缓冲区       |
+| printflush      | Print Flush   | 打印刷新, 将某个信息板的内容设置为文本缓冲区内的文本, 并清空文本缓冲区               |
+| getlink         | Get Link      | 获取链接的第i(从0开始)个建筑, 逻辑块可以链接一些建筑以便后续使用                     |
+| control         | Control       | 控制某个建筑射击、禁用等, 只能控制链接的建筑(世处除外)                               |
+| radar           | Radar         | 雷达, 以某个建筑为中心, 一定的范围与条件下查找一个单位                               |
+| sensor          | Sensor        | 传感器, 获取各种东西的附加信息, 如单位坐标等                                         |
+| set             | Set           | 设置(赋值), 设置一个变量的值为另一个值                                               |
+| op              | Operation     | 运算, 设置一个变量的值为另外两个值运算后的值                                         |
+| select          | Select        | 选择, 当条件成立时, 设置一个变量的值为其中一个值, 否则设置为另一个值                 |
+| wait            | Wait          | 等待, 等待一段时间(秒), 可能稍微有些不精确                                           |
+| stop            | Stop          | 停止, 执行到这个语句时将不再继续往下执行, 一直重复执行该语句                         |
+| lookup          | Lookup        | 索引内容, 根据给出的编号获取一个 content (如 @flare) 或队伍 (team)                   |
+| packcolor       | Pack Color    | 打包颜色, 将 RGBA (值范围为[0,1]) 打包成一个数字, 方便使用 (如 draw col)             |
+| unpackcolor     | Unpack Color  | 解包颜色, 将 packcolor 的颜色拆解回 RGBA                                             |
+| end             | End           | 结束, 相当于 `jump 0`, 跳转回首行                                                    |
+| jump            | Jump          | 跳转, 当条件满足时, 跳转到某行或某个标记                                             |
+| ubind           | Unit Bind     | 单位绑定, 绑定一个单位, 相当于将 `@unit` 赋值为某个单位                              |
+| ucontrol        | Unit Control  | 单位控制, 控制绑定的单位并在这段时间内去做某件事                                     |
+| uradar          | Unit Radar    | 单位雷达, 类似 radar, 控制绑定的单位并以该单位为中心执行 radar                       |
+| ulocate         | Unit Locate   | 单位定位, 控制绑定的单位并查找一个离单位较近的目标, 可以查找敌我建筑、矿物等         |
+
+
+逻辑语句 (世处专用)
+-------------------------------------------------------------------------------
+这方面内容该教程作者并没过多接触, 可能不太准确, 如有勘误请开启一个 issue
+
+| 导出格式        | 长名称        | 描述                                                    |
+| -----------     | ------------- | ------------------------------------------------------- |
+| getblock        | Get Block     | 获取方块, 能获取某个位置的建筑或地形                    |
+| setblock        | Set Block     | 设置方块, 能直接往某个位置放建筑、替换建筑、替换地形    |
+| spawn           | Spawn Unit    | 生成单位, 在指定位置                                    |
+| status          | Apply Status  | 状态, 给单位添加状态效果                                |
+| weathersense    | Weather Sense | 天气感知, 检查某天气是否正在发生                        |
+| weatherset      | Weather Set   | 设置天气, 设置某种天气启用或禁用                        |
+| spawnwave       | Spawn Wave    | 生成播次, 可以不使播次计数来到下一播                    |
+| setrule         | Set Rule      | 设置游戏规则                                            |
+| message         | Flush Message | 信息, 类似 printflush, 但是向玩家界面显示信息           |
+| cutscene        | Cutscene      | 视角, 控制玩家视角, 例如移动、缩放                      |
+| effect          | Effect        | 效果, 在位置生成例子效果                                |
+| explosion       | Explosion     | 爆炸, 往某个位置生成爆炸, 具有伤害                      |
+| setrate         | Set Rate      | 设置世处执行速度 (@ipt) 即每 tick 执行多少条逻辑语句    |
+| fetch           | Fetch         | 获取, 获取地图中第i个建筑、单位等, 可限定队伍和获取总数 |
+| sync            | Sync          | 同步, 同步某个变量                                      |
+| clientdata      | Client Data   | ?                                                       |
+| getflag         | Get Flag      | 获取全局标记                                            |
+| setflag         | Set Flag      | 设置全局标记, 可以被其它世处使用 getflag 获取           |
+| setprop         | Set Prop      | 设置属性, 例如可以设置单位的移动速度                    |
+| playsound       | Play Sound    | 播放声音                                                |
+| setmarker       | Set Marker    | 设置 Marker 属性, 可以调整已经创建的 Marker             |
+| makemarker      | Make Marker   | 创建 Marker, 可以在地图上创建各种图形文本等             |
+| localeprint     | Locale Print  | 本地化打印, 类似print, 但可以查找语言文件产生翻译       |
+
+---
+[目录](./README.md)

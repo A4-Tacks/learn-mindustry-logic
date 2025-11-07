@@ -33,3 +33,4 @@ Index
 * [附录01-op方法](./appendix-01-op-method.md)
 * [附录02-传感器选项](./appendix-02-sensor-options.md)
 * [附录03-环境变量](./appendix-03-env-vars.md)
+* [附录04-术语表](./appendix-04-glossary.md)
