@@ -50,11 +50,11 @@ gsub("\\[ (?<desc> [^\\[\\]]+ ) \\] \\s* \\( (?<link> \\. [^()]* ) \\)";
      "[\(.desc)](#\(.link|if contains("#") then
        gsub(".*(?=#)"; "")
      else
-       $title[.]//error
+       $title[.]//error | ascii_downcase
      end))"
      ;
      "x")
-| if sub("^# "; "") as $cur | $title | any(.==$cur) then
+| if sub("^# "; "") as $cur | $title | any(.==$cur) and input_line_number > 5 then
   "", "---", "", .
 end
 '
