@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: ConorMacBride/install-package@v1
         with:
-          apt: jq
+          apt: jq wget
   linked-markdown:
     runs-on: ubuntu-latest
     needs: preset
@@ -22,3 +22,17 @@ jobs:
         with:
           name: mindustry-learn-logic.md
           path: mindustry-learn-logic.md
+      - run: |
+          hash date tar || exit
+          name=mindustry-learn-logic-$(date +%F-%H%M%S).md
+          html=${name%.md}.html
+          cp -v mindustry-learn-logic.md $name
+          wget -O md2html.tar.gz https://github.com/A4-Tacks/markdown2html-converter/releases/download/v2.0.0-local.1/markdown2html-converter-v2.0.0-local.1-x86_64-unknown-linux-musl.tar.gz
+          tar -xf md2html.tar.gz
+          ./markdown2html-converter --header-ids "" $name -o $html -t learn-mindustry-logic
+          mkdir build
+          cp $html build/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mindustry-learn-logic.html
+          path: build
