@@ -56,7 +56,7 @@ i++{printf","}
 {printf "\"%s\": \"%s\"", FILENAME, $0}
 {nextfile}' "${files[@]}" | jq '.+{"./pages/README.md": .["./README.md"]}')
 
-cat "${files[@]}" | jq -Rr \
+cat "${files[@]}" | jq -Rrn \
     --argjson title "$title_index" \
 '
 def page_first:
