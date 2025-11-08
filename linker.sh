@@ -46,15 +46,30 @@ i++{printf","}
 cat "${files[@]}" | jq -Rr \
     --argjson title "$title_index" \
 '
-gsub("\\[ (?<desc> [^\\[\\]]+ ) \\] \\s* \\( (?<link> \\. [^()]* ) \\)";
-     "[\(.desc)](#\(.link|if contains("#") then
-       gsub(".*(?=#)"; "")
-     else
-       $title[.]//error | ascii_downcase
-     end))"
-     ;
-     "x")
-| if sub("^# "; "") as $cur | $title | any(.==$cur) and input_line_number > 5 then
-  "", "---", "", .
-end
+def page_first:
+  sub("^# "; "") as $cur | $title | any(.==$cur) and input_line_number > 4;
+reduce inputs as $line ({};
+  if $line | page_first then
+    .pages += [.current]
+    | .current = [$line]
+  else .current += [$line | gsub("\\[ (?<desc> [^\\[\\]]+ ) \\] \\s* \\( (?<link> \\. [^()]* ) \\)";
+    "[\(.desc)](#\(.link|if contains("#") then
+      gsub(".*(?=#)"; "")
+    else
+      $title[.]//error | ascii_downcase
+    end))";
+  "x")] end
+)
+| if .current | length != 0 then .pages += [.current] end
+| .pages
+| map({lines: ., max_ref: (
+    map(scan("\\[ \\^ (\\d+) \\^? \\]"; "x")[0] | tonumber)|max//0
+  )})
+| foreach .[] as $page (0;
+  . as $base |
+  $page.lines[]
+  | gsub("\\[ \\^ (?<n>\\d+) \\^? \\]"; "[^\(.n | tonumber+$base)]"; "x"),
+  $base + $page.max_ref
+)
+| strings
 '
