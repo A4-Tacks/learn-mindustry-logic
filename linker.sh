@@ -23,15 +23,28 @@ function CATCH_ERROR { # {{{
 }
 trap CATCH_ERROR ERR # }}}
 
-hash jq
+hash jq mktemp
 
 shopt -s failglob
+
+license=$(mktemp ./tmp.license.XXXXXXXXXX)
+trap 'rm "$license"' exit
+readonly license
+
+cat << EOF > "$license"
+# License
+
+\`\`\`text
+$(<./LICENSE)
+\`\`\`
+EOF
 
 files=(
     ./README.md
     ./pages/README.md
     ./pages/[0-9][0-9]-*.md
     ./pages/appendix-*.md
+    "$license"
 )
 
 title_index=$(awk '{sub("^# ", "")}{sub(" ", "-")}

@@ -14,6 +14,8 @@
 **Author**: [A4-Tacks](https://github.com/A4-Tacks)\
 **repo**: <https://github.com/A4-Tacks/learn-mindustry-logic>
 
+最新的单文件 Markdown 或网页 (html) 可以在 <https://github.com/A4-Tacks/learn-mindustry-logic/actions> 找到
+
 [目录](./pages/README.md)
 
 [Mindustry]: https://github.com/Anuken/Mindustry
