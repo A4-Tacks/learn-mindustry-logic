@@ -67,8 +67,8 @@ reduce inputs as $line ({};
   )})
 | foreach .[] as $page (0;
   . as $base |
-  $page.lines[]
-  | gsub("\\[ \\^ (?<n>\\d+) \\^? \\]"; "[^\(.n | tonumber+$base)]"; "x"),
+  ($page.lines[] | gsub("\\[ \\^ (?<n>\\d+) \\^? \\]"; "[^\(.n | tonumber+$base)]"; "x")),
+  "", "---", "",
   $base + $page.max_ref
 )
 | strings
