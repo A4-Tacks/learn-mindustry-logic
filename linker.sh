@@ -48,6 +48,11 @@ cat "${files[@]}" | jq -Rr \
 '
 def page_first:
   sub("^# "; "") as $cur | $title | any(.==$cur) and input_line_number > 4;
+def patch:
+  if . == ">" then
+    "> "
+  end
+  ;
 reduce inputs as $line ({};
   if $line | page_first then
     .pages += [.current]
@@ -72,4 +77,5 @@ reduce inputs as $line ({};
   $base + $page.max_ref
 )
 | strings
+| patch
 '
