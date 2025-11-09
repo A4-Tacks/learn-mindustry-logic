@@ -57,6 +57,8 @@ op mod i i @links
 [^1]: 这个范围一般点击建筑显示有个圈的话, 大致就是这个圈, 比如炮塔射程 超速器范围,
       或者单位射程, 没有的话一般这个范围应该很小.
 
+      该范围可用 `sensor range block1 @range` 获取
+
 ---
 [上一章](./14-pack-color.md)
 [目录](./README.md)
