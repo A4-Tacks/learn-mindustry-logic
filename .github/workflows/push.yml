@@ -27,7 +27,7 @@ jobs:
           name=learn-mindustry-logic-$(date +%F-%H%M%S).md
           html=${name%.md}.html
           cp -v learn-mindustry-logic.md $name
-          wget -O md2html.tar.gz https://github.com/A4-Tacks/markdown2html-converter/releases/download/v2.0.0-local.1/markdown2html-converter-v2.0.0-local.1-x86_64-unknown-linux-musl.tar.gz
+          wget -O md2html.tar.gz https://github.com/A4-Tacks/markdown2html-converter/releases/download/v2.0.0-local.2/markdown2html-converter-v2.0.0-local.2-x86_64-unknown-linux-musl.tar.gz
           tar -xf md2html.tar.gz
           ./markdown2html-converter --header-ids "" $name -o $html -t learn-mindustry-logic
           mkdir build
