@@ -73,17 +73,19 @@ ubind @poly
 ucontrol build tx @thisy type r @this
 ```
 
-注: `@this`变量表示逻辑自身的building环境变量,
-而`@thisx`是逻辑自身位置的x坐标环境变量
+> [!IMPORTANT]
+> `@this` 变量表示逻辑块自身 building 的环境变量, 而 `@thisx` 是逻辑自身位置的x坐标环境变量
 
 
 单位控制语句中的命名问题
 ---
-> [!WARNING]
-> 对于`ucontrol unbind`, 命名并不合理,
-> 其作用是解除控制(control)而不是绑定(bind),
-> 所以或许应该叫做`ucontrol decontrol`
+对于`ucontrol unbind`, 命名并不合理, 其作用是解除控制(control)而不是绑定(bind),
+所以或许应该叫做 `ucontrol decontrol`
 
+> [!WARNING]
+> 由于 `ucontrol` 语句本身会产生控制, 而 `unbind` 会解除控制,
+> 所以除非你确信自己已经控制了单位, 否则不要使用 `unbind`,
+> 不然很容易打断其它逻辑的操作, 或者是单位的默认AI
 
 ---
 [上一章](./16-unit-bind.md)
