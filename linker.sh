@@ -59,11 +59,21 @@ i++{printf","}
 cat "${files[@]}" | jq -Rrn \
     --argjson title "$title_index" \
 '
+{
+  NOTE: "注",
+  TIP: "小技巧",
+  IMPORTANT: "引入",
+  WARNING: "警告",
+  CAUTION: "小心",
+} as $alerts |
 def page_first:
   sub("^# "; "") as $cur | $title | any(.==$cur) and input_line_number > 4;
+def alert: $alerts[.] // error("unknown alert \(.)");
 def patch:
   if . == ">" then
     "> "
+  else
+    (scan("^> \\[!(\\S+)\\]\\s*$")[0] | "> [!\(.)] \(alert):") // .
   end
   ;
 reduce inputs as $line ({};
