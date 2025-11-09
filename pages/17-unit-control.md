@@ -40,8 +40,7 @@ ucontrol move x y 0 0 0
 对于within来判定是否接近某点时, 记得如果你不需要控制状态,
 就不要使用这个, 因为是控制语句, 会造成控制状态.
 
-如果不需要控制状态, 请手动应用公式计算距离:
-$\mid \overrightarrow {(x_u - x_t,\ y_u - y_t)} \mid$
+如果不需要控制状态, 请手动应用公式计算距离: `len(x1-x0, y1-y0)`
 
 以下是一段代码, 模拟了 `ucontrol within tx ty 10 within 0`
 
@@ -57,7 +56,7 @@ op lessThan within len 10
 
 建造复杂建筑
 ---
-对于build建造的建筑需要额外信息, 如带桥连接点或者逻辑内容等, 可以借助config位,
+对于build建造的建筑需要额外信息, 如带桥连接点或者逻辑内容等, 可以借助config参数,
 它输入一个building类型值, 可以把另一个建筑的config复制过来
 
 以下是一段代码, x坐标为奇数时, 会将自身复制一份在右边.

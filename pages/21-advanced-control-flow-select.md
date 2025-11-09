@@ -28,7 +28,7 @@ end:
 printflush message1
 ```
 
-我们可以构建出一张跳转子表, 在我们的预期中, n为整数且 $0 \le n \le 2$
+我们可以构建出一张跳转子表, 在我们的预期中, n为整数且 `0 ≤ n ≤ 2`
 
 ```gas
 op add @counter @counter n
