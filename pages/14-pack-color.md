@@ -91,7 +91,7 @@ printflush message1
 >
 > `unpackcolor r g b a color`
 >
-> **注意**: r g b a 的值并不是 `[0,255]` 而是 `[0,1]`
+> **注意**: r g b a 的值并不是 `[0,255]` 而是 `[0,1]`, 这和 `packcolor` 对应
 
 
 ---
