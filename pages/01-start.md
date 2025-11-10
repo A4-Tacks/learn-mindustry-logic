@@ -44,6 +44,8 @@ printflush message1
 > [!TIP]
 > 如果此教程劝退了你, 或自觉基础足够, 你可以直接跳转到 [25-编译器](./25-compilers.md) 章节,
 > 以高效的方式编写复杂逻辑
+>
+> 或者也可以翻看目录中的相关附录, 也比较有用
 
 [Mindustry]: https://github.com/Anuken/Mindustry
 [^1]: 没有计算机基础的话, 并不需要过多的关注这个到底是什么
