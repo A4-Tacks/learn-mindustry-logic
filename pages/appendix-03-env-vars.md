@@ -68,11 +68,13 @@
 > 只是通常运行结果相同不易察觉
 
 
-特殊枚举变量
+特殊数字枚举变量
 -------------------------------------------------------------------------------
 用于特殊用途的枚举变量
 
-- **@ctrlProcessor @ctrlPlayer @ctrlCommand**: 用于传感器的`@controlled`返回结果,
+- **@ctrlProcessor**: 传感器的 `@controlled` 返回结果, 表示单位被逻辑块控制
+- **@ctrlPlayer**: 传感器的 `@controlled` 返回结果, 表示单位被玩家控制 (附身)
+- **@ctrlCommand**:** 传感器的 `@controlled` 返回结果, 表示单位被RTS指令控制
   在旧版本还有 **@ctrlFormation** 用于表示单位在编队中,
   目前编队功能已被删除, 相同的值被 **@ctrlCommand** 所替代
 

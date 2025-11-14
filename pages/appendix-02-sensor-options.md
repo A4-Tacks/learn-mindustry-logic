@@ -65,7 +65,7 @@
 | team              | 队伍             |
 | type              | 类型             |
 | flag              | 标记             |
-| controlled        | 已控制           |
+| controlled        | 已控制[^5]       |
 | controller        | 控制者           |
 | name              | 名称             |
 | payloadCount      | 荷载数量         |
@@ -85,6 +85,9 @@
 [^3]: 指定内存中能存储多少个数据, 例如 cell 是 64 个, bank 是 512 个
 
 [^4]: 不仅能获取建筑、单位的大小, 还能获取字符串的大小(utf-16长度)
+
+[^5]: 如果返回 0 则表示未被控制, 返回 `@ctrlProcessor`, `@ctrlPlayer`, `@ctrlCommand` 则是控制的各种情况,
+      详见 [特殊数字枚举变量](./appendix-03-env-vars.md#特殊数字枚举变量)
 
 ---
 [目录](./README.md)
