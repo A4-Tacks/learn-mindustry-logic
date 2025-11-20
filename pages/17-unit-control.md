@@ -59,6 +59,9 @@ op lessThan within len 10
 对于build建造的建筑需要额外信息, 如带桥连接点或者逻辑内容等, 可以借助config参数,
 它输入一个building类型值, 可以把另一个建筑的config复制过来
 
+> [!NOTE]
+> 此处的 `config` 不要和 `sensor` 的 `@config` 混淆
+
 以下是一段代码, x坐标为奇数时, 会将自身复制一份在右边.
 事先链接好四周建筑的位置, 这样新逻辑一被放下就会链接从而终止建筑条件
 
@@ -75,6 +78,9 @@ ucontrol build tx @thisy type r @this
 
 > [!IMPORTANT]
 > `@this` 变量表示逻辑块自身 building 的环境变量, 而 `@thisx` 是逻辑自身位置的x坐标环境变量
+
+> [!TIP]
+> 对于部分同种类建筑可以直接覆盖, 例如可以在电力节点的位置覆盖建造电池, 或在传送带处覆盖建造带桥
 
 
 单位控制语句中的命名问题
