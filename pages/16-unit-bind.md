@@ -39,22 +39,14 @@ end
 finded:
 set player @unit
 follow_loop:
-    sensor x player @x
-    sensor y player @y
+    sensor x player @x; sensor y player @y
     sensor name player @name # 如果有, 则可以显示玩家名
-    # 取两位小数省的小数部分太长
-    op idiv x x 0.01 # 通过整除省去乘再向下取整运算
-    op idiv y y 0.01
-    op div x x 100
-    op div y y 100
-    print "player "
-    print name
-    print "[]: "
-    print unit_ty
-    print " -> "
-    print x
-    print ", "
-    print y
+    # 取两位小数避免小数部分过长
+    op idiv x x 0.01; op idiv y y 0.01 # 通过整除省去乘再向下取整运算
+    op div  x x 100;  op div  y y 100
+    print "player "; print name; print "[]: "
+    print unit_ty; print " -> "
+    print x; print ", "; print y
     printflush message1
 sensor ctrl_type player @controlled
 jump follow_loop equal ctrl_type @ctrlPlayer # 仅在玩家控制期间进行执行, 玩家解除控制重新寻找
