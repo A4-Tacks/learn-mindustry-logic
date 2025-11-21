@@ -82,6 +82,32 @@ printflush message1 # clear message
 > 研究源码的话可以看看, 可能一些极端环境可以利用该顺序
 
 
+简单的单位绑定例子
+-------------------------------------------------------------------------------
+
+**计数某种单位数量**:
+
+```gas
+restart:
+    set count 0
+    ubind @flare # 绑定星辉, 想计数其它单位可改成其它单位或使用 lookup
+    jump finish equal @unit null
+    set head @unit
+
+loop:
+    sensor dead head @dead
+    jump restart notEqual dead false # 如果首个单位死亡, 则永远绑定不到, 重新计数
+
+    op add count count 1
+    ubind @flare
+    jump loop notEqual @unit head
+
+
+finish:
+    print count; print " "; print @unit
+    printflush message1
+```
+
 ---
 [上一章](./15-radar.md)
 [目录](./README.md)
