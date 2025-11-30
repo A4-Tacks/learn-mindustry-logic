@@ -33,11 +33,16 @@ loop:
 jump loop lessThan i @itemCount
 ```
 
-**注**: 在以前的版本, 想通过content获取到lookup使用的id, 需要lookup所有物品去依次比较,
-不过在146版本, sensor可以使用`@id`属性, 不需要费劲了
+> [!NOTE]
+> 在以前的版本, 想通过content获取到lookup使用的id, 需要lookup所有物品去依次比较,
+> 不过在146版本, sensor 可以使用`@id`属性, 不需要费劲了
 
 一些简单的用途, 例如因为内存元只能传递数字,
-所以想在多逻辑之间沟通使用某个物品时, 就可以利用`@id`和lookup进行协调.
+所以想在多个逻辑之间沟通使用某个物品时, 就可以利用`@id`和lookup进行传递.
+
+> 自 BE-25666 版本后, `read` 和 `write` 的功能被进行了扩展, 可以对其他逻辑中的变量进行读写
+
+在版本 >150 时, 有时也可以利用直接读写逻辑变量来传递物品的 content, 而不是其 `@id`
 
 ---
 [上一章](./12-other-control-flow.md)
