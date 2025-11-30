@@ -74,7 +74,7 @@
 
 - **@ctrlProcessor**: 传感器的 `@controlled` 返回结果, 表示单位被逻辑块控制
 - **@ctrlPlayer**: 传感器的 `@controlled` 返回结果, 表示单位被玩家控制 (附身)
-- **@ctrlCommand**:** 传感器的 `@controlled` 返回结果, 表示单位被RTS指令控制
+- **@ctrlCommand**: 传感器的 `@controlled` 返回结果, 表示单位被RTS指令控制
   在旧版本还有 **@ctrlFormation** 用于表示单位在编队中,
   目前编队功能已被删除, 相同的值被 **@ctrlCommand** 所替代
 
