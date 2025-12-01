@@ -172,6 +172,17 @@ Set Rule (setrule)
 | rtsMinSquad           | 队伍, 值      | RTS 小队最小规模                    |
 
 
+Apply Status (status)
+-------------------------------------------------------------------------------
+给单位添加状态效果, `status false` 为添加效果, `status true` 为移除效果
+
+例如添加十秒潮湿并移除 boss 效果
+
+```gas
+status false wet unit 10
+status true boss unit 0
+```
+
 
 ---
 [上一章](./23-advanced-control-flow-function.md)
