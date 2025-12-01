@@ -77,6 +77,18 @@ drawflush display1
   例如 `draw scale 0.001 1` 并不会拉伸 x 轴
 
 
+> [!IMPORTANT]
+> 从 draw 开始, 一些语句的记忆负担就有些重了, 如果你使用 VSCode 可以考虑使用片段补全,
+>
+> 从 [bang-lang-releases] 中下载后缀为 `.vsix` 的文件, 作为 VSCode 外部插件,
+> 安装后建立一个后缀为 `.mdtlbl` 的文件即可补全代码片段
+>
+> 这些代码片段大部分可用于逻辑, 少部分片段带有单引号, 用于逻辑需将单引号手动删除,
+> 还有一些片段属于 bang-lang 专属可以不用管, 例如 `if` 片段无法在逻辑使用
+
+[bang-lang-releases]: https://github.com/A4-Tacks/mindustry_logic_bang_lang/releases/latest
+
+
 格式化
 ---
 这是在146版本之后添加的语句, 写为`format`, 有一个普通参数
