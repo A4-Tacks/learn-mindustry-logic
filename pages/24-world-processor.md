@@ -153,7 +153,7 @@ Set Rule (setrule)
 | dropZoneRadius        | 数值          | 敌人出生点爆破半径                  |
 | unitCap               | 数值          | 基本单位上限 (可用核心等方式增加)   |
 | mapArea               | x, y, 宽, 高  | 地图可见范围 (范围外无法前往与交互) |
-| lighting              | 数值          | 是否需求照明 (点亮地图)             |
+| lighting              | 数值          | 是否需求照明 (需要点亮地图)         |
 | canGameOver           | 数值          | 能否游戏结束 (毁灭所有核心后)       |
 | ambientLight          | 数值          | 环境光颜色                          |
 | solarMultiplier       | 数值          | 太阳能板发电倍率                    |
@@ -170,6 +170,13 @@ Set Rule (setrule)
 | blockDamage           | 队伍, 值      | 建筑伤害倍率                        |
 | rtsMinWeight          | 队伍, 值      | RTS 的 “谨慎” 最低值                |
 | rtsMinSquad           | 队伍, 值      | RTS 小队最小规模                    |
+
+
+例如设置为需求照明
+
+```gas
+setrule lighting 1 0 0 0 0
+```
 
 
 Apply Status (status)
