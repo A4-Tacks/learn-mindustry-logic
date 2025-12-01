@@ -136,6 +136,43 @@ setprop @health @this 0
 ```
 
 
+Set Rule (setrule)
+-------------------------------------------------------------------------------
+设置某个地图或队伍规则, 例如波次时间、建造速度等
+
+| 规则                  | 参数          | 描述                                |
+| ---                   | ---           | ---                                 |
+| currentWaveTime       | 数值          | 当前波次倒计时 (tick)               |
+| waveTimer             | 数值          | 波次定时器是否启用                  |
+| waves                 | 数值          | 总波次数                            |
+| wave                  | 数值          | 当前波次                            |
+| waveSpacing           | 数值          | 波次间隔时间                        |
+| waveSending           | 数值          | 是否允许用波次按钮手动生成波次      |
+| attackMode            | 数值          | 游戏模式是否为攻击模式              |
+| enemyCoreBuildRadius  | 数值          | 敌人核心禁止建造区半径              |
+| dropZoneRadius        | 数值          | 敌人出生点爆破半径                  |
+| unitCap               | 数值          | 基本单位上限 (可用核心等方式增加)   |
+| mapArea               | x, y, 宽, 高  | 地图可见范围 (范围外无法前往与交互) |
+| lighting              | 数值          | 是否需求照明 (点亮地图)             |
+| canGameOver           | 数值          | 能否游戏结束 (毁灭所有核心后)       |
+| ambientLight          | 数值          | 环境光颜色                          |
+| solarMultiplier       | 数值          | 太阳能板发电倍率                    |
+| dragMultiplier        | 数值          | 环境阻力倍率                        |
+| ban                   | 方块/单位     | 不允许使用某些建筑或单位            |
+| unban                 | 方块/单位     | 解除 ban                            |
+| buildSpeed            | 队伍, 值      | 建造速度倍率                        |
+| unitHealth            | 队伍, 值      | 单位血量倍率                        |
+| unitBuildSpeed        | 队伍, 值      | 单位生产速度倍率                    |
+| unitMineSpeed         | 队伍, 值      | 单位采矿速度倍率                    |
+| unitCost              | 队伍, 值      | 单位成本                            |
+| unitDamage            | 队伍, 值      | 单位攻击伤害倍率                    |
+| blockHealth           | 队伍, 值      | 建筑血量倍率                        |
+| blockDamage           | 队伍, 值      | 建筑伤害倍率                        |
+| rtsMinWeight          | 队伍, 值      | RTS 的 “谨慎” 最低值                |
+| rtsMinSquad           | 队伍, 值      | RTS 小队最小规模                    |
+
+
+
 ---
 [上一章](./23-advanced-control-flow-function.md)
 [目录](./README.md)
