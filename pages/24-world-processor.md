@@ -109,6 +109,33 @@ message announce 1 @wait
 > 例如 `print "@liquid.slag.name"; message announce 1 @wait` 将显示 `矿渣`
 
 
+Set Prop (setprop)
+-------------------------------------------------------------------------------
+设置属性, 用于设置建筑、单位的属性, 包括物品、液体数量, 和部分可被 sensor 的属性
+
+| 属性            | 描述                              |
+| ---             | ---                               |
+| x               | 当前 x 坐标                       |
+| y               | 当前 y 坐标                       |
+| velocityX       | 当前 x 方向的运动速度             |
+| velocityY       | 当前 y 方向的运动速度             |
+| rotation        | 朝向                              |
+| speed           | 移动速度属性 (上限)               |
+| armor           | 护甲                              |
+| health          | 血量 (生命值)                     |
+| shield          | 护盾                              |
+| team            | 队伍                              |
+| flag            | 单位标签 (类似 ucontrol flag)     |
+| totalPower      | 全电量, 参考 sensor 附录          |
+| payloadType     | 载荷类型                          |
+
+例如以下逻辑让世处自己自毁
+
+```gas
+setprop @health @this 0
+```
+
+
 ---
 [上一章](./23-advanced-control-flow-function.md)
 [目录](./README.md)

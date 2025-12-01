@@ -17,7 +17,7 @@
 | totalItems        | 总物品数         |
 | firstItem         | 首个物品         |
 | totalLiquids      | 总液体数         |
-| totalPower        | 总电力           |
+| totalPower        | 全电量[^6]       |
 | itemCapacity      | 物品容量         |
 | liquidCapacity    | 液体容量         |
 | powerCapacity     | 电力容量         |
@@ -88,6 +88,9 @@
 
 [^5]: 如果返回 0 则表示未被控制, 返回 `@ctrlProcessor`, `@ctrlPlayer`, `@ctrlCommand` 则是控制的各种情况,
       详见 [特殊数字枚举变量](./appendix-03-env-vars.md#特殊数字枚举变量)
+
+[^6]: 如果是耗电建筑, 如工厂那么该属性代表工作时接收的电力百分比, 值小于 1 时将工作变慢 (间断),
+      如果是电池则为电池储电量, 这仅限于单个建筑, 并不获取整个电网
 
 ---
 [目录](./README.md)
