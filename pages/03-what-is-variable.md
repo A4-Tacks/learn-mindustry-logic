@@ -31,8 +31,8 @@ print a; print ","; print b; print ","; print c
 
 (空值) null
 ---
-表示什么都没有的一种类型, 发生无效数学运算比如除以0后,
-或者一个还没有赋值[^1]的变量, 其值都会是空值
+表示什么都没有的一种类型, 例如发生无效数学运算比如除以 0 后,
+或者一个还没有赋值[^1]的变量, 其值类型都会是 null
 
 ```gas
 # a 未赋值, 所以是null值
@@ -63,6 +63,11 @@ getlink building 0
 sensor c building @type
 print a; print ","; print c
 ```
+
+> [!IMPORTANT]
+> `@sorter` 是一个内置变量, 每种建筑、单位等都有一个 content 和与之对应的内置变量,
+> 内置变量通常以 `@` 开头, 并且大部分在变量表中都是隐藏的,
+> 如果你查看变量表时看到以 `@` 开头的变量类型为 null 的话很有可能你变量名写错了
 
 > [!TIP]
 > 可以使用 `sensor result input @type` 获取 building 和 unit 的 content
