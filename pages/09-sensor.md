@@ -36,6 +36,10 @@ printflush message1 # 仅在遍历完成后一起输出
 
 全部的属性参考这里[附录02-传感器选项](./appendix-02-sensor-options.md)
 
+> [!NOTE]
+> 有时游戏内逻辑编辑器显示的参数顺序, 和实际导入导出的参数顺序是不一样的,
+> 例如 `sensor x block @x` 游戏内显示为 `Sensor x = @x in block`
+
 ---
 [上一章](./08-getlink.md)
 [目录](./README.md)
