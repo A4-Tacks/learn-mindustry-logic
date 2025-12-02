@@ -13,6 +13,10 @@
 uradar enemy any any distance 0 1 result;
 ```
 
+> [!NOTE]
+> 像普通的 `radar` 语句一样, 该语句也有时间间隔, 但是关联在单位上的:
+> 对于同一个单位, `radar` 搜索后, 在较短之内, 该 `radar` 语句重复搜索返回旧目标
+
 
 ---
 [上一章](./17-unit-control.md)
