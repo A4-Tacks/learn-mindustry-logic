@@ -121,6 +121,10 @@ ucontrol build tx @thisy type r @this
 | unbind        | -                             | -                     | 停用单位的逻辑控制, 恢复常规AI                                       |
 | deconstruct   | x, y                          | -                     | 拆除指定坐标的建筑, 通常需在地图规则中允许                           |
 
+> [!NOTE]
+> 很多单位控制操作都需要在单位接近某个范围内才生效, 通常是 `@range`,
+> 使用时注意用 move, approach 等方式使单位移动到范围内再操作
+
 
 [^1]: 在旧版本中, pathfind 其实是 autoPathfind 的功能, 所以旧版本的 pathfind 在新版本中导入会寻路至 `0,0`,
       而又因为 `0,0` 通常无法到达, 而原地不动
