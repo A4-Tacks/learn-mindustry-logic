@@ -119,6 +119,8 @@ ucontrol build tx @thisy type r @this
 | getBlock      | x, y, 类型, 建筑, 地板        | 类型, 建筑, 地板      | 在坐标处获取建筑、地板和方块类型, 坐标需位于单位 `@range` 半径内     |
 | within        | x, y, 半径, result            | result                | 检查单位是否接近了某个位置                                           |
 | unbind        | -                             | -                     | 停用单位的逻辑控制, 恢复常规AI                                       |
+| deconstruct   | x, y                          | -                     | 拆除指定坐标的建筑, 通常需在地图规则中允许                           |
+
 
 [^1]: 在旧版本中, pathfind 其实是 autoPathfind 的功能, 所以旧版本的 pathfind 在新版本中导入会寻路至 `0,0`,
       而又因为 `0,0` 通常无法到达, 而原地不动
