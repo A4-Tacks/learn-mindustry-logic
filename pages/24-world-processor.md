@@ -71,6 +71,11 @@ printflush message1
 # 虽然单位多了信息板会打印不下, 毕竟有输出上限
 ```
 
+> [!NOTE]
+> 在高版本, fetch 的 unit、build、unitCount、buildCount 支持指定具体的 content,
+> 例如 `fetch unitCount result @sharded i @poly` 即获取场上的幻型(poly)数量
+
+
 Flush Message (message)
 -------------------------------------------------------------------------------
 类似 printflush, 清空文本缓冲区并将其内容输出到玩家屏幕界面
