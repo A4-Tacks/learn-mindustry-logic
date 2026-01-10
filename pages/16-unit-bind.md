@@ -58,7 +58,7 @@ printflush message1 # clear message
 -------------------------------------------------------------------------------
 `ubind` 可以直接输入一个 **unit** , 而不是一个 **content**
 
-当输入一个 unit 时, `ubind foo` 效果类似 `set @unit foo`
+当输入一个 unit 时, `ubind foo` 效果类似 `set @unit foo`, 就像给 `@unit` '赋值' 似的
 
 可以用于一些巧妙的用途:
 
