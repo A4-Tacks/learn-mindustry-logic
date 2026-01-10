@@ -82,7 +82,7 @@ reduce inputs as $line ({};
     | .current = [$line]
   else .current += [$line | gsub("\\[ (?<desc> [^\\[\\]]+ ) \\] \\s* \\( (?<link> \\. [^()]* ) \\)";
     "[\(.desc)](#\(.link|if contains("#") then
-      gsub(".*(?=#)"; "")
+      gsub(".*#"; "")
     else
       $title[.]//error | ascii_downcase
     end))";
