@@ -141,9 +141,15 @@ ucontrol build tx @thisy type r @this
 1. 绑定一个完全自由的单位 (没有被玩家控制、没有被其它逻辑块控制)
 2. 将其控制
 3. 如果它的控制者不再是当前逻辑 (被其它逻辑或其它因素抢走),
-   那么放弃该单位, 回到步骤 1., 否则回到步骤 2. 并持续控制
+   那么放弃该单位, 回到步骤 1. , 否则回到步骤 2. 并持续控制
 
 ```gas
+sensor dead @unit @dead
+jump find notEqual dead false          # 如果单位死亡或未绑定则重新查找
+
+sensor controller @unit @controller
+jump controlled equal controller @this # 如果绑定单位已经被当前逻辑块控制, 则继续控制
+
 find:
     ubind @flare
     sensor controlled @unit @controlled
@@ -155,14 +161,8 @@ controlled:
     op add i i 0.1; op mod i i 4 # 持续改变移动坐标让单位正在被多次控制变得明显
     op add x @thisx i
     # 控制语句是必须的, 并且两次控制间隔不能超过十秒
-    # 否则解除控制后, 该设计就会被认为发生了单位被抢等情况
+    # 否则解除控制后, 该设计就会认为发生了单位被抢等情况
     ucontrol move x y 0 0 0
-
-sensor dead @unit @dead
-jump find notEqual dead false # 如果单位死亡则重新查找
-
-sensor controller @unit @controller
-jump controlled equal controller @this # 如果单位已经被当前逻辑块控制, 则继续
 ```
 
 该种控制方式简单、好写、坑少, 且可以进阶为某靠谱的多控方案, 故在此推荐
