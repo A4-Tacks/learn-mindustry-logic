@@ -136,6 +136,41 @@ printflush message1
 即带有匹配守卫的跳转表
 
 
+实用变量存取表
+---
+有时由于内存元只能存储数字, 或不想使用内存元等原因, 可以用多个变量来存储多个值, 并按编号访问
+
+例如调整 `i` 的值为 `0`, `1`, `2`, `3`, 可以按自己想要的顺序取到不同的物品:
+
+```gas
+set i 1
+
+op mul offset i 2
+op add @counter @counter offset
+
+set result @copper
+jump output always 0 0
+
+set result @sand
+jump output always 0 0
+
+set result @silicon
+jump output always 0 0
+
+set result @lead
+
+output:
+    print result
+    printflush message1
+```
+
+> [!TIP]
+> 可以将例如 `@copper` 这些内置变量, 改为其它自己使用的变量, 达到 '读取第 i 个变量' 的效果,
+> 也可以将如 `set result variable` 改为 `set variable result`, 将读取变为写入
+>
+> 学过其它编程语言的应该对此很熟悉, 实现了类似数组或列表的效果
+
+
 [^1]: 穿透, 观察之前编写的示例代码, 除了最后一个块我们都编写了跳转至select末尾的语句,
       我们可以思考一下, 如果没有这么做的话会怎样?
       会继续执行下一个块, 直到被某个跳转跳出. 这种行为称作穿透.
