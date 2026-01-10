@@ -79,7 +79,7 @@ printflush message1 # clear message
 
 > [!TIP]
 > 一个不确定是否稳定工作的特性:
-> 在直接绑定一个unit而非content时, 不会影响绑定content时将要绑定的下一个单位
+> 在直接绑定一个具体单位 (unit) 而非content时, 不会影响绑定content时将要绑定的下一个单位
 
 > [!TIP]
 > 如果有单位减少将会使用置换删除, 将表中最后的单位交换到删除的单位空位中,
