@@ -19,3 +19,6 @@
 [目录](./pages/README.md)
 
 [Mindustry]: https://github.com/Anuken/Mindustry
+
+> [!TIP]
+> 如需了解有关逻辑的版本更新可以参考 [mindcode/wiki](https://github.com/cardillan/mindcode/wiki/Changes-to-Mindustry-Logic)
