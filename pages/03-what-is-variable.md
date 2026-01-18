@@ -77,8 +77,8 @@ print a; print ","; print c
 表示某个特定的建筑, 而不是某类建筑 (content)
 
 > [!NOTE]
-> 这和 content 不同, content 可以描述某类建筑, 例如路由器 (`@sorter`),
-> 而 building 描述了某个建造出来的建筑, 比如链接到的 sorter1
+> 这和 content 不同, content 可以描述某类建筑, 例如分类器 (`@sorter`),
+> 而 building 描述了某个建造出来的建筑, 比如处理器链接到的 sorter1
 
 ```gas
 getlink a 0
