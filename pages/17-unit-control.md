@@ -108,7 +108,7 @@ ucontrol build tx @thisy type r @this
 | boost         | 是否开启                      | -                     | 开始/停止助推                                                        |
 | target        | x, y, 是否射击                | -                     | 向某个位置瞄准/射击                                                  |
 | targetp       | 目标, 是否射击                | -                     | 根据提前量向某个目标瞄准/射击                                        |
-| itemDrop      | 目标, 数量                    | -                     | 将携带的物品放入一座建筑                                             |
+| itemDrop      | 目标, 数量                    | -                     | 将携带的物品放入一座建筑 (放入 `@air` 可以直接丢弃)                  |
 | itemTake      | 目标, 物品, 数量              | -                     | 从建筑中取出某种物品                                                 |
 | payDrop       | -                             | -                     | 卸下当前载荷                                                         |
 | payTake       | 拾取数量                      | -                     | 从当前位置拾取载荷                                                   |
