@@ -119,7 +119,7 @@ ucontrol build tx @thisy type r @this
 | getBlock      | x, y, 类型, 建筑, 地板        | 类型, 建筑, 地板      | 在坐标处获取建筑、地板和方块类型, 坐标需位于单位 `@range` 半径内     |
 | within        | x, y, 半径, result            | result                | 检查单位是否接近了某个位置                                           |
 | unbind        | -                             | -                     | 停用单位的逻辑控制, 恢复常规AI                                       |
-| deconstruct   | x, y                          | -                     | 拆除指定坐标的建筑, 通常需在地图规则中允许                           |
+| deconstruct   | x, y                          | -                     | 拆除指定坐标的建筑, 通常需在地图规则中允许 (不允许可能都不显示)      |
 
 > [!NOTE]
 > 很多单位控制操作都需要在单位接近某个范围内才生效, 通常是 `@range`,
