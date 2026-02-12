@@ -57,10 +57,14 @@
 | shooting          | 是否射击         |
 | boosting          | 是否助推         |
 | bufferSize        | 缓冲区待绘制数   |
-| operation         | 方块操作次数     |
+| operations        | 方块操作次数     |
 | mineX             | 挖矿点X          |
 | mineY             | 挖矿点Y          |
 | mining            | 是否正在挖矿     |
+| buildX            | 建造或拆除点X    |
+| buildY            | 建造或拆除点Y    |
+| building          | 正在建造的建筑   |
+| breaking          | 正在拆除的建筑   |
 | speed             | 速度             |
 | team              | 队伍             |
 | type              | 类型             |
@@ -72,7 +76,10 @@
 | payloadType       | 荷载类型         |
 | totalPayload      | 已用荷载空间     |
 | payloadCapacity   | 荷载容量         |
+| maxUnits          | 最大单位数[^8]   |
 | id                | 编号[^2]         |
+| selectedBlock     | 建造栏选择的建筑 |
+| selectedRotation  | 建造栏建造朝向   |
 | enabled           | 是否启用         |
 | config/configure  | 设置[^1]         |
 | color             | 颜色             |
@@ -94,6 +101,9 @@
 
 [^7]: 通常是用于检查冲击反应堆启动进度、钍反应堆的热量等,
       也可用来检查力墙投影已损失的盾量 (高版本可使用 @shield 检查当前盾量)
+
+[^8]: 从核心获取, 返回对应队伍的最大同种单位数,
+      如果是波次队伍等无上限的情况则返回一个巨大的数字
 
 ---
 [目录](./README.md)
