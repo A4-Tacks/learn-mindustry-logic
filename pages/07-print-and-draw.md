@@ -148,6 +148,9 @@ printflush message1
 
 [^1]: 这里一般是填写的content类型的值, 它们一般都附带一个图标可以被绘制出来
 
+      在 155 版本中, 这被强化了, 可以输入另一个显示屏的内容,
+      例如: `draw image 40 40 display2 80 0; drawflush display1`
+
 [^2]: 用于控制将输出文本的哪一点对齐到给定坐标,
       例如 bottomLeft 就是始终让输出文本的左下角位于给定坐标处
 
