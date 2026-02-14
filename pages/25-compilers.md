@@ -109,6 +109,7 @@
 [VCode]: https://github.com/Sirvoid/MindustryVCode
 [slimlog]: https://github.com/ThePotatoChronicler/slimlog
 [minpiler]: https://github.com/neumond/minpiler
+[MCompiler]: https://github.com/zach-r-hughes/MindustryCompiler
 
 
 > 如果发现编译器特性等描述错误, 请打开一个 issue 来讨论
@@ -125,6 +126,7 @@
 | [MlogEvo]     | 基本无文档, 存在一些bug, 影响正常使用                                |
 | [VCode]       | 零文档, 基本无示例, 无法在命令行运行, 测试不便                       |
 | [minpiler]    | 零文档                                                               |
+| [MCompiler]   | 无许可证, 示例文档较少, 编译产物被提交, 跨平台能力可能不佳           |
 
 
 ---
