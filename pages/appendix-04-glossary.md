@@ -89,7 +89,7 @@
 | explosion       | Explosion     | 爆炸, 往某个位置生成爆炸, 具有伤害                      |
 | setrate         | Set Rate      | 设置世处执行速度 (@ipt) 即每 tick 执行多少条逻辑语句    |
 | fetch           | Fetch         | 获取, 获取地图中第i个建筑、单位等, 可限定队伍和获取总数 |
-| sync            | Sync          | 同步, 同步某个变量                                      |
+| sync            | Sync          | 同步, 同步某个服务端变量至客户端                        |
 | clientdata      | Client Data   | ?                                                       |
 | getflag         | Get Flag      | 获取全局标记                                            |
 | setflag         | Set Flag      | 设置全局标记, 可以被其它世处使用 getflag 获取           |
