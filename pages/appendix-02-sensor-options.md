@@ -83,6 +83,8 @@
 | id                | 编号[^2]         |
 | selectedBlock     | 建造栏选择的建筑 |
 | selectedRotation  | 建造栏建造朝向   |
+| bulletLifetime    | 子弹可存活时间   |
+| bulletTime        | 子弹已存活时间   |
 | enabled           | 是否启用         |
 | config/configure  | 设置[^1]         |
 | color             | 颜色             |
