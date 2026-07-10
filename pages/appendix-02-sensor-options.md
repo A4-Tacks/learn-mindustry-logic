@@ -56,6 +56,7 @@
 | range             | 范围             |
 | shooting          | 是否射击         |
 | boosting          | 是否助推         |
+| flying            | 是否飞行         |
 | bufferSize        | 缓冲区待绘制数   |
 | operations        | 方块操作次数     |
 | mineX             | 挖矿点X          |
