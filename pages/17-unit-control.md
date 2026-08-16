@@ -54,7 +54,7 @@ op lessThan within len 10
 ```
 
 > [!TIP]
-> 在高版本中 (约为 159), within 和 unbind 并不会造成控制了,
+> 在高版本中 (约为 159.8), within 和 unbind 并不会造成控制了,
 > 如果不需要考虑低版本兼容, 已经可以随便用 within 了
 
 
