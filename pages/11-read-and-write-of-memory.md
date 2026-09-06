@@ -29,6 +29,10 @@ printflush message1
 
 内存也常常被用于多逻辑协同
 
+> [!NOTE]
+> 在高版本, 约 >= v160, 可能由于 <https://github.com/Anuken/Mindustry/pull/12459>
+> 使内存并不止存储数字, 而是可以存储任意值
+
 ### 上文使用的名词术语表
 | 易于理解的 | 标准的           |
 | ---        | ---              |
